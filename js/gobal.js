@@ -1,4 +1,5 @@
 {function Main() {
+    // 加载菜单列表
     LoadMenuList();
 }
 
@@ -25,7 +26,7 @@ async function LoadMenuList() {
             window.location.href = item.Link;
         });
         // 判断当前页面是否为菜单链接或首页或工具页面
-        if (currentPage != item.Link || currentPage == "/index.html" || currentPage == "/") {
+        if (currentPage != item.Link) {
             // 添加li元素到菜单列表
             MenuListElement.appendChild(li);
         }
