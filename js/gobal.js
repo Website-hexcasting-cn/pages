@@ -26,7 +26,7 @@ async function LoadMenuList() {
             window.location.href = item.Link;
         });
         // 判断当前页面是否为菜单链接或首页或工具页面
-        if (currentPage != item.Link) {
+        if (!CompareURL(currentPage, item.Link)) {
             // 添加li元素到菜单列表
             MenuListElement.appendChild(li);
         }
@@ -34,3 +34,11 @@ async function LoadMenuList() {
 }
 
 Main()}
+
+//比较url是否相同
+function CompareURL(url1, url2) {
+    //去除末尾html标记
+    url1 = url1.replace(/\.html$/, '');
+    url2 = url2.replace(/\.html$/, '');
+    return url1 == url2;
+}
