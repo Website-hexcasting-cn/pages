@@ -7,7 +7,7 @@
     margin-block: 0;
 }
 
-.Menu {
+#Menu {
     position: fixed;
     inset: 0 0 auto 0;
     width: 100%;
@@ -15,7 +15,6 @@
     padding: 0 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #5f3dc4;
     color: #fff;
 
@@ -26,14 +25,13 @@
         display: inline;
     }
 
-    #MenuRightList {
+    #MenuList {
         display: flex;
-        flex-direction: row-reverse;
         margin: 0;
         list-style: none;
-
+        margin-left: -35px;
         li {
-            margin-right: 20px;
+            margin-right: 10px;
         }
     }
 }

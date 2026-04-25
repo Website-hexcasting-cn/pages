@@ -7,23 +7,21 @@
     <meta name="keywords" content="咒法学,hexcasting,hexMod,Minecraft,中文" />
     <title>咒法学</title>
 </head>
-<link rel="stylesheet" href="css/gobal.css">
-<script src="js/RandomIntroductionText.js"></script>
+<link rel="stylesheet" href="/css/gobal.css">
 <h1 style="display: none;">咒法学</h1>
-<div class="Menu">
-    <img id="HexcastingLogo" src="Resource/HexcastingLogo.png" alt="Hexcasting"/>
-    <ul id="MenuRightList">
-        <li id="MenuTool">工具</li> <!--未完成-->
+<div id="Menu">
+    <img id="HexcastingLogo" src="/Resource/HexcastingLogo.png" alt="Hexcasting"/>
+    <ul style="flex-direction: row;" id="MenuList">
+        <li>首页</li>
+        <li>工具</li>
     </ul>
 </div>
 <div id="Introduction">
     <body class="Background"></body>
-    <img style="width: 50%; height: 50%;" src="Resource/LogoBackgroundImage.webp" alt="咒法学" />
+    <img style="width: 50%; height: 50%;" src="/Resource/LogoBackgroundImage.webp" alt="咒法学" />
     <p style="font-size: 40px;" class="Text">Minecraft mod Hexcasting</p>
     <p style="font-size: 20px;" class="Text" id="IntroductionText">自然的隐秘正在显现，在那意识塑成的梦中宫殿</p>
 </div>
 </html>
-<script>
-    document.getElementById('HexcastingLogo').addEventListener('click', function() 
-    {window.location.href = 'https://github.com/FallingColors/HexMod';});
-</script>
+<script src="/js/gobal.js"></script>
+<script src="/js/RandomIntroductionText.js"></script>
