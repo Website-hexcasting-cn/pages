@@ -11,10 +11,9 @@
 <script src="js/RandomIntroductionText.js"></script>
 <h1 style="display: none;">咒法学</h1>
 <div class="Menu">
-    <ul>
-        <li>首页</li> <!--未完成-->
-        <li>文档</li>
-        <li>模组</li>
+    <img id="HexcastingLogo" src="Resource/HexcastingLogo.png" alt="Hexcasting"/>
+    <ul id="MenuRightList">
+        <li id="MenuTool">工具</li> <!--未完成-->
     </ul>
 </div>
 <div id="Introduction">
@@ -24,3 +23,7 @@
     <p style="font-size: 20px;" class="Text" id="IntroductionText">自然的隐秘正在显现，在那意识塑成的梦中宫殿</p>
 </div>
 </html>
+<script>
+    document.getElementById('HexcastingLogo').addEventListener('click', function() 
+    {window.location.href = 'https://github.com/FallingColors/HexMod';});
+</script>
