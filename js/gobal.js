@@ -24,8 +24,8 @@ async function LoadMenuList() {
             // 切换到新页面
             window.location.href = item.Link;
         });
-        // 判断当前页面是否为菜单链接
-        if (currentPage != item.Link) {
+        // 判断当前页面是否为菜单链接或首页或工具页面
+        if (currentPage != item.Link || currentPage == "/index.html" || currentPage == "/") {
             // 添加li元素到菜单列表
             MenuListElement.appendChild(li);
         }
