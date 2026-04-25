@@ -2,7 +2,7 @@
     {
         "Name": "首页",
         "ID": "MenuHome",
-        "Link": "/index.html"
+        "Link": "/"
     },
     {
         "Name": "工具",
