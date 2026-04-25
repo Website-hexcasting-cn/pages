@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "首页",
+        "ID": "MenuHome",
+        "Link": "/index.html"
+    },
+    {
+        "Name": "工具",
+        "ID": "MenuTool",
+        "Link": "/OtherPage/Tool.html"
+    }
+]
