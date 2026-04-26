@@ -1,0 +1,4482 @@
+{
+	"yaha:time_bomb_pos": {
+		"seq": "eewaqaweedd",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:easy_thrust": {
+		"seq": "wawaqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:mirror_front_back": {
+		"seq": "aeqeawaeqeaqqwe",
+		"dir": "EAST"
+	},
+	"hexcassettes:dequeue": {
+		"seq": "eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww",
+		"dir": "WEST"
+	},
+	"hexcasting:less": {
+		"seq": "q",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:is_baby": {
+		"seq": "awaqdwaaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcassettes:enqueue": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwweeweweewqdwwewewwewweweww",
+		"dir": "EAST"
+	},
+	"hexpose:fluid_raycast": {
+		"seq": "wqqaqwede",
+		"dir": "EAST"
+	},
+	"miehex:all_record": {
+		"seq": "deeeeeweeweeqeewee",
+		"dir": "EAST"
+	},
+	"hexecuteif:halt_if": {
+		"seq": "aqdeee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:zone_entity/monster": {
+		"seq": "qqqqqwdeddwq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:flight/time": {
+		"seq": "dwdwdewq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:stack_len": {
+		"seq": "qwaeawqaeaqa",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:grow_up": {
+		"seq": "wadaweeeeew",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:wisp/self": {
+		"seq": "dedwqqwdedwqqaw",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:lesser_gate": {
+		"seq": "wwaqqqqqeawqwqwqwqwqw",
+		"dir": "EAST"
+	},
+	"hexpats:headpat": {
+		"seq": "weweeeee",
+		"dir": "EAST"
+	},
+	"ephemera:thothcount": {
+		"seq": "wqaqwadad",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:not": {
+		"seq": "dw",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:everbook/write": {
+		"seq": "qwqqqwqaeaqaaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:burning": {
+		"seq": "eewdead",
+		"dir": "WEST"
+	},
+	"hexal:wisp/hex": {
+		"seq": "aweewaqaweewaawww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdim:dim/carved": {
+		"seq": "qqqqqwaeaeaeaeaeadwaqaeaq",
+		"dir": "NORTH_WEST"
+	},
+	"hexflow:call_stack": {
+		"seq": "dwdeaqqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexparse:focus2code": {
+		"seq": "aqqqqqwwewewewewewdqeeeeed",
+		"dir": "EAST"
+	},
+	"hexxyplanes:plane_pos": {
+		"seq": "dwawdaqqwwqq",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:withdraw": {
+		"seq": "qaqwwdwdw",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:flay_artmind3": {
+		"seq": "ewewedwqwaqaeweeeweaqdedaeade",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:high": {
+		"seq": "ewaad",
+		"dir": "EAST"
+	},
+	"autumnfloods:tags": {
+		"seq": "dwwedwe",
+		"dir": "EAST"
+	},
+	"hexal:link/comm/clear": {
+		"seq": "aweeeeewa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:autograph": {
+		"seq": "eeeeeww",
+		"dir": "WEST"
+	},
+	"hexcellular:observe_property": {
+		"seq": "aawd",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:string/split": {
+		"seq": "aqwaqa",
+		"dir": "EAST"
+	},
+	"hexcasting:lightning": {
+		"seq": "waadwawdaaweewq",
+		"dir": "EAST"
+	},
+	"hexcassettes:specs": {
+		"seq": "qeqwqwqwqwqeqaweqqqqq",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/list/spellbook_index/readable": {
+		"seq": "wqaeaqwedqddqw",
+		"dir": "NORTH_WEST"
+	},
+	"slate_work:get_item": {
+		"seq": "eaqwqaeqwqqwqwwqwqqweqwaweadwawwwawdaewawq",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:visible_dstl": {
+		"seq": "edeewadwewdwe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:const/double/tau": {
+		"seq": "eawae",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:wisp/move/speed/get": {
+		"seq": "eeewdqdee",
+		"dir": "EAST"
+	},
+	"hexdebug:craft/quenched_debugger": {
+		"seq": "ddwwwwwwedwewdweqewdwwwewwwdwwwew",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:get_hand_lamp_position": {
+		"seq": "qwddedqdd",
+		"dir": "SOUTH_WEST"
+	},
+	"oneironaut:writerodram": {
+		"seq": "eqqwqqqwaaw",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:time_add": {
+		"seq": "weedwaqqwdewewewewewe",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:item/main_hand": {
+		"seq": "adeq",
+		"dir": "EAST"
+	},
+	"hexautomata:quantum_swap": {
+		"seq": "aqaedwaqded",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:unautograph": {
+		"seq": "wwqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"slate_work:get_items": {
+		"seq": "eaqwqaeqawawaedd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:get_entity/monster": {
+		"seq": "qqqqqdaqaawq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:get_light": {
+		"seq": "wqwqwqwqwqwaeqqqqaeqaeaeaeaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:zone_entity/not_monster": {
+		"seq": "eeeeewaqaawq",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:yaw": {
+		"seq": "wad",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:allay_mix": {
+		"seq": "daaedewdqdqdqdqdqdadwewewewewew",
+		"dir": "WEST"
+	},
+	"autumnfloods:square_block": {
+		"seq": "dwaadw",
+		"dir": "EAST"
+	},
+	"hexcellular:readonly_property": {
+		"seq": "aawa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:villager_type": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwded",
+		"dir": "EAST"
+	},
+	"hexcasting:dispel_rain": {
+		"seq": "eeewwweeewwaqqddqdqd",
+		"dir": "EAST"
+	},
+	"ephemera:getmount": {
+		"seq": "eeedeewaaw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:mage_mouth": {
+		"seq": "aaqqadaa",
+		"dir": "WEST"
+	},
+	"oneironaut:swapspace": {
+		"seq": "wqqqwwwwwqqqwwwqdaqadwqqwdaqadweqeqqqqeqeqaqeqedeqeqa",
+		"dir": "EAST"
+	},
+	"caduceus:read/mark/local": {
+		"seq": "aeaaqawd",
+		"dir": "EAST"
+	},
+	"hexcasting:rotate": {
+		"seq": "aaeaa",
+		"dir": "EAST"
+	},
+	"complexhex:qinvert": {
+		"seq": "waqqqqqew",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:create_dust": {
+		"seq": "eaqwedqdqddqqwae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:get_biome": {
+		"seq": "qwqwqawdqqaqqdwaqwqwq",
+		"dir": "WEST"
+	},
+	"autumnfloods:cloud": {
+		"seq": "eaqaweeeee",
+		"dir": "WEST"
+	},
+	"autumnfloods:recipes": {
+		"seq": "edeedqdweee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:link/others": {
+		"seq": "eqqqqqawqeeeeedww",
+		"dir": "EAST"
+	},
+	"slate_work:get_sents": {
+		"seq": "waeawaewawwaeq",
+		"dir": "EAST"
+	},
+	"hexical:age_scroll": {
+		"seq": "wqwawqwqawwddwwa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdebug:splicing/list/spellbook_index/write": {
+		"seq": "wedqdewqaeaae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:mote/use_on": {
+		"seq": "qqqwqqqqaa",
+		"dir": "EAST"
+	},
+	"slate_work:check_item": {
+		"seq": "eaqwqaeqqddqeeqddq",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:expelliarmus": {
+		"seq": "dqdaedeadqdaede",
+		"dir": "EAST"
+	},
+	"hexcasting:cos": {
+		"seq": "qqqqqad",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:mote/craft": {
+		"seq": "wwawdedwawdewwdwaqawdwwedwawdedwaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:get_effect_amplifier": {
+		"seq": "wqqqaqwa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:dispense": {
+		"seq": "wqwawqwddaeeead",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:parrot": {
+		"seq": "wweedadw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:size_specklike": {
+		"seq": "adeeqed",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:long/convert": {
+		"seq": "wawdedwaaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:arctan2": {
+		"seq": "deadeeeeewd",
+		"dir": "WEST"
+	},
+	"slate_work:wave_normal": {
+		"seq": "eaqdaadqaeewa",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:recipe": {
+		"seq": "qaqqaeawqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:jailbreak": {
+		"seq": "wwaqqqqqeqdedwqeaeqwdedwqeaeq",
+		"dir": "EAST"
+	},
+	"complexhex:summontextdisplay": {
+		"seq": "wqwqwqwqwqwawaaqawdeddw",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:type/iota": {
+		"seq": "awd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexoverpowered:mind_stack/pop": {
+		"seq": "wqaqwweeeee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:get_entity/player": {
+		"seq": "qqqqqdaqaawe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:less_eq": {
+		"seq": "qq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:get_block_inventory": {
+		"seq": "qaqqqqqeaqq",
+		"dir": "EAST"
+	},
+	"lapisworks:hastenature3": {
+		"seq": "awwdedwwawwdedweawawwwdwdww",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:wisp/transfer/allow": {
+		"seq": "qqqqqewwqeeeee",
+		"dir": "NORTH_WEST"
+	},
+	"hexdebug:splicing/list/spellbook_index/read": {
+		"seq": "wqaeaqwedqddq",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:readable_necklace": {
+		"seq": "wwaaqqqqqew",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:get_power": {
+		"seq": "qwqwqwqwqwqqwwaadwdaaww",
+		"dir": "EAST"
+	},
+	"hexpose:get_ender_chest": {
+		"seq": "qaqdqaqdeeewedw",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:readable/entity": {
+		"seq": "wawqwqwqwqwqwew",
+		"dir": "EAST"
+	},
+	"hexical:promote_lamp": {
+		"seq": "qweedeqeedeqdqdwewewwewewwewe",
+		"dir": "WEST"
+	},
+	"oneironaut:queryrod": {
+		"seq": "qwqqqwqaeaqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hierophantics:make_damage_trigger": {
+		"seq": "qqqqqawwqdwa",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:world": {
+		"seq": "dwaq",
+		"dir": "EAST"
+	},
+	"caduceus:write/mark/local": {
+		"seq": "dqddedwa",
+		"dir": "WEST"
+	},
+	"slate_work:set_craft_count": {
+		"seq": "eaqwqaeqwaeadawwadaeawedd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:stonecut": {
+		"seq": "qqqqqwaeaeaeaeaeadawa",
+		"dir": "EAST"
+	},
+	"moreiotas:string/iota": {
+		"seq": "wawqwawaw",
+		"dir": "EAST"
+	},
+	"autumnfloods:motes": {
+		"seq": "qaqdqaqdqaq",
+		"dir": "NORTH_WEST"
+	},
+	"yaha:trident": {
+		"seq": "ddwwdaaeaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hierophantics:villager_sleep": {
+		"seq": "qqwqqwqqqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:smoke": {
+		"seq": "qwqqadadadewdqqdwe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:combine_text": {
+		"seq": "dwdeqqqqqawq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:absorption_hearts": {
+		"seq": "waawedwdwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:if": {
+		"seq": "awdd",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:setframerotation": {
+		"seq": "wwawwqwwawwaqdq",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:num_read": {
+		"seq": "qeeeeed",
+		"dir": "EAST"
+	},
+	"hexweb:send": {
+		"seq": "qewqawqeq",
+		"dir": "NORTH_EAST"
+	},
+	"hierophantics:get_mind_trigger": {
+		"seq": "ddewaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:wisp/trigger/move": {
+		"seq": "eqwawqwaqww",
+		"dir": "EAST"
+	},
+	"hex_machina:release": {
+		"seq": "qqqqqwaddwd",
+		"dir": "WEST"
+	},
+	"lapisworks:banish_my_enchsent": {
+		"seq": "wdwewdwdwqwawwwawewawwwaw",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:get_enchant": {
+		"seq": "awaeqwawq",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:readideatime": {
+		"seq": "qwqwqwqwqwqqqeqaqeq",
+		"dir": "WEST"
+	},
+	"hex_machina:get_bullet": {
+		"seq": "qaqqqeqaww",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:link/get": {
+		"seq": "eqqqqqaww",
+		"dir": "EAST"
+	},
+	"hexstruction:rotate_counterclockwise_x": {
+		"seq": "aeqeawaeqeadqaa",
+		"dir": "EAST"
+	},
+	"oneironaut:shiftsentinel": {
+		"seq": "wwaeawwaeqqwqwqwqwqwq",
+		"dir": "EAST"
+	},
+	"hexical:write_charmed": {
+		"seq": "waqqqqqedeqdqdqdqdqe",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:circle": {
+		"seq": "wwwwwwqwwwwwwqwwwwwwqwwwwwwqwwwwwwqwwwwww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:rotate_clockwise_x": {
+		"seq": "aeqeawaeqeaeedd",
+		"dir": "EAST"
+	},
+	"hierophantics:make_health_trigger": {
+		"seq": "qqqqqawwewawqada",
+		"dir": "SOUTH_EAST"
+	},
+	"hexflow:nested_modify": {
+		"seq": "wdwawedqdewawdw",
+		"dir": "SOUTH_WEST"
+	},
+	"scryglass:draw_line": {
+		"seq": "aaqdwdwdeww",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:moar_health": {
+		"seq": "wqadaqwwawwwqwwawdwawwqwwwwa",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:item_variant_max": {
+		"seq": "dwaawaqwawq",
+		"dir": "WEST"
+	},
+	"oneironaut:extradimensionaleval": {
+		"seq": "wqwqwqwqwqwaqdeaqqe",
+		"dir": "WEST"
+	},
+	"moreiotas:string/chat/caster": {
+		"seq": "waqa",
+		"dir": "EAST"
+	},
+	"overevaluate:dup_many": {
+		"seq": "waadadaa",
+		"dir": "EAST"
+	},
+	"hexcasting:logarithm": {
+		"seq": "eqaqe",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:index_of": {
+		"seq": "dedqde",
+		"dir": "EAST"
+	},
+	"autumnfloods:num_write": {
+		"seq": "eqqqqqa",
+		"dir": "EAST"
+	},
+	"hexcasting:const/vec/px": {
+		"seq": "qqqqqea",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:reenable_minds": {
+		"seq": "qaqqaeawaeaeqqqeqqwwqqeqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:conjure_block": {
+		"seq": "qqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:hopper": {
+		"seq": "qwawqwaeqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:isis": {
+		"seq": "qaawedee",
+		"dir": "EAST"
+	},
+	"hexical:weave_mesh": {
+		"seq": "qaqqqqqwqqqdeewewee",
+		"dir": "EAST"
+	},
+	"complexhex:scalebit": {
+		"seq": "wqwqwqwqwqwawwaawaawa",
+		"dir": "SOUTH_EAST"
+	},
+	"slate_work:sort_items": {
+		"seq": "eaqwqaeqqwaeadaeawq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdebug:splicing/clipboard/read": {
+		"seq": "wqaeaqweeeedw",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:everbook/read": {
+		"seq": "eweeewedqdeddw",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:piercing_surface_raycast": {
+		"seq": "weeaaeqeaae",
+		"dir": "EAST"
+	},
+	"ephemera:getstatus": {
+		"seq": "qqqqqedwd",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:teach_simp": {
+		"seq": "deaqqeawqqwwqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:mote/storage/get": {
+		"seq": "qqqqqaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hierophantics:get_minds": {
+		"seq": "qaqqaeawaea",
+		"dir": "NORTH_EAST"
+	},
+	"yaha:paper_plane_target": {
+		"seq": "wwqaqwwdedde",
+		"dir": "NORTH_WEST"
+	},
+	"oneironaut:writeidea": {
+		"seq": "eweweweweweeewqaqwe",
+		"dir": "EAST"
+	},
+	"hexpose:villager_profession": {
+		"seq": "qeqwqwqwqwqeqawewawqwawadeeeee",
+		"dir": "EAST"
+	},
+	"hexcasting:recharge": {
+		"seq": "qqqqqwaeaeaeaeaea",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:similar": {
+		"seq": "aedd",
+		"dir": "EAST"
+	},
+	"hexal:toughness": {
+		"seq": "aeqqqqea",
+		"dir": "EAST"
+	},
+	"hexical:serialize_pattern": {
+		"seq": "wqaedeqd",
+		"dir": "EAST"
+	},
+	"miehex:worldreloader": {
+		"seq": "qaqqqqqwqqwqwqwqwawqwwdwwewwewwewwewweww",
+		"dir": "EAST"
+	},
+	"hexpose:env_media": {
+		"seq": "dde",
+		"dir": "WEST"
+	},
+	"hexoverpowered:mind_env/schedule": {
+		"seq": "waawedaqqqqdeaqq",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:rotate_list": {
+		"seq": "wwaadaqadae",
+		"dir": "EAST"
+	},
+	"hexcasting:zone_entity/not_item": {
+		"seq": "eeeeewaqaaww",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:charge": {
+		"seq": "waqqqqqwaeaeaeaeaea",
+		"dir": "EAST"
+	},
+	"autumnfloods:forever": {
+		"seq": "qqqqqweeeee",
+		"dir": "NORTH_WEST"
+	},
+	"yaha:potion_to_item": {
+		"seq": "dqqqqqedwda",
+		"dir": "EAST"
+	},
+	"hexical:magic_missile": {
+		"seq": "qaqww",
+		"dir": "WEST"
+	},
+	"lapisworks:fireyfists": {
+		"seq": "wwewdawdewqewedadad",
+		"dir": "EAST"
+	},
+	"moreiotas:string/action": {
+		"seq": "wdwewdwdw",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:iota_speck": {
+		"seq": "adeeaqa",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:hastenature1": {
+		"seq": "qwdedwqqwdedweawawwwdwdww",
+		"dir": "WEST"
+	},
+	"overevaluate:soroban_retrieve": {
+		"seq": "waqdee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:modify_block_volatile": {
+		"seq": "deewedeeeee",
+		"dir": "NORTH_WEST"
+	},
+	"ephemera:networktp": {
+		"seq": "qqqqqwdeddwdawqqqwaq",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:slice": {
+		"seq": "qaeaqwded",
+		"dir": "NORTH_WEST"
+	},
+	"slate_work:media_reflection": {
+		"seq": "eaqdaadqae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:sentinel/create": {
+		"seq": "waeawae",
+		"dir": "EAST"
+	},
+	"overevaluate:atalanta": {
+		"seq": "aqdea",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:edify": {
+		"seq": "wqaqwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:is_evoking": {
+		"seq": "wwaqqqqqeeaqawwewewwaqawwewew",
+		"dir": "EAST"
+	},
+	"hexcasting:modulo": {
+		"seq": "addwaad",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:explode": {
+		"seq": "aawaawaa",
+		"dir": "EAST"
+	},
+	"hexcasting:tuck": {
+		"seq": "ddqaa",
+		"dir": "EAST"
+	},
+	"miehex:function_check": {
+		"seq": "aqdeeadq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:vibration": {
+		"seq": "wwawawwd",
+		"dir": "EAST"
+	},
+	"hexweb:set_element": {
+		"seq": "edadedaa",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:reclaim_ameth": {
+		"seq": "awwqqqwwa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdebug:craft/debugger": {
+		"seq": "aaewwwwwaqwawqwadawqwwwawwwqwwwaw",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:item/prop/size/set": {
+		"seq": "adeeedew",
+		"dir": "EAST"
+	},
+	"hexpose:get_moon": {
+		"seq": "eweweweweweeweeedadw",
+		"dir": "WEST"
+	},
+	"hexcasting:get_entity_height": {
+		"seq": "awq",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:tooltip_hide": {
+		"seq": "qqawwwdee",
+		"dir": "EAST"
+	},
+	"hexal:link/unlink/others": {
+		"seq": "qeeeeedweqqqqqaww",
+		"dir": "WEST"
+	},
+	"oneironaut:haltrod": {
+		"seq": "aqdeeweeew",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:qw": {
+		"seq": "wdeeeeeqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:arcsin": {
+		"seq": "ddeeeee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:blockstate_crop": {
+		"seq": "qaqqqqqwaea",
+		"dir": "EAST"
+	},
+	"autumnfloods:let_in": {
+		"seq": "dwdd",
+		"dir": "EAST"
+	},
+	"hexparse:learn_patterns": {
+		"seq": "aqqqqqeawqwqwqwqwqwwqqeqqeqqeqqeqqeqqdqeeeeed",
+		"dir": "EAST"
+	},
+	"hierophantics:make_velocity_trigger": {
+		"seq": "qqqqqawwdaqqqaq",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:hash": {
+		"seq": "qqawqaqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexparse:create_linebreak": {
+		"seq": "dadadedadaddwwwa",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:read_spechand": {
+		"seq": "aqqqqa",
+		"dir": "EAST"
+	},
+	"moreiotas:matrix/concat/vert": {
+		"seq": "awwaeawwawawdedwa",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:type/to_item": {
+		"seq": "qaqqaea",
+		"dir": "EAST"
+	},
+	"hexical:get_hotbar": {
+		"seq": "qwawqwa",
+		"dir": "EAST"
+	},
+	"lapisworks:equal_block": {
+		"seq": "qwawqwadadwewdwe",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:writeable_necklace": {
+		"seq": "wwadeeeeeqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:zone_entity/player": {
+		"seq": "qqqqqwdeddwe",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:easy_extract": {
+		"seq": "wedwdw",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:axisangle": {
+		"seq": "waqqqqqedaqqqa",
+		"dir": "SOUTH_EAST"
+	},
+	"overevaluate:hadamard": {
+		"seq": "waqaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:link/comm/close_transmit": {
+		"seq": "ewaqawe",
+		"dir": "EAST"
+	},
+	"ephemera:getiotasize": {
+		"seq": "qwaeawqaqdedd",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:write_grimoire": {
+		"seq": "aqwqaeaqa",
+		"dir": "WEST"
+	},
+	"lapisworks:readable_spechand": {
+		"seq": "qqqqadww",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:beep": {
+		"seq": "adaa",
+		"dir": "WEST"
+	},
+	"hexcasting:arctan": {
+		"seq": "eadeeeeew",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:tear": {
+		"seq": "wwewwedeadwdaedewweww",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:block_var_read": {
+		"seq": "waqqqdae",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:all_in_one_read": {
+		"seq": "aqqqqwqqwqq",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:control": {
+		"seq": "weeeweedwaqaaq",
+		"dir": "EAST"
+	},
+	"hexical:displace": {
+		"seq": "qaqqqqeedaqqqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:zone_entity": {
+		"seq": "qqqqqwded",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdebug:splicing/view_index/write": {
+		"seq": "wedqdewawdedw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:interop/pehkui/set": {
+		"seq": "ddwdwwdwwd",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:focus": {
+		"seq": "wwwwwawwwwwawwwqwwwawwwwwawwwwwaqwqdqdqdqdwedeewq",
+		"dir": "WEST"
+	},
+	"complexhex:cnarg": {
+		"seq": "waqqqqqeww",
+		"dir": "SOUTH_EAST"
+	},
+	"hierophantics:make_teleport_trigger": {
+		"seq": "qqqqqawweaqaawaaqa",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:detectshroud": {
+		"seq": "qqqqqwwaawewaawdww",
+		"dir": "SOUTH_EAST"
+	},
+	"scryglass:scale_vision": {
+		"seq": "aaqwdwwwdwwwdweede",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:duplicate_n": {
+		"seq": "aadaadaa",
+		"dir": "EAST"
+	},
+	"hexal:gate/close": {
+		"seq": "qqqwwqqqwqqawdedw",
+		"dir": "WEST"
+	},
+	"complexhex:conjugate": {
+		"seq": "wqqd",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:found": {
+		"seq": "wwa",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:getrodlook": {
+		"seq": "qwqqqwqawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:to_pigment": {
+		"seq": "aqwedeweeeewweeew",
+		"dir": "NORTH_WEST"
+	},
+	"hexecuteif:inv_drop_item": {
+		"seq": "dwewdwedwwadeeed",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:get_player_saturation": {
+		"seq": "qqqadaddq",
+		"dir": "WEST"
+	},
+	"hexal:mote/return": {
+		"seq": "qded",
+		"dir": "EAST"
+	},
+	"hexical:get_lesser_sentinels": {
+		"seq": "dqddq",
+		"dir": "WEST"
+	},
+	"hexical:move_specklike": {
+		"seq": "adeqaa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:set_hotbar": {
+		"seq": "dwewdwe",
+		"dir": "WEST"
+	},
+	"hexical:lifetime_specklike": {
+		"seq": "adeqqaawdd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:set_arch_lamp_storage": {
+		"seq": "qaqwddedqedeeeee",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:contain_mote": {
+		"seq": "eeeeedawdwd",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:all_eval": {
+		"seq": "wdeqqqqqaewawqwqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:interop/fabric_only/phase_block": {
+		"seq": "daqqqa",
+		"dir": "WEST"
+	},
+	"miehex:record_read": {
+		"seq": "aqqqqqwqqwqqeqqwqq",
+		"dir": "EAST"
+	},
+	"hexcasting:potion/night_vision": {
+		"seq": "qqqaawawaeqdd",
+		"dir": "WEST"
+	},
+	"hexthings:dict_ents": {
+		"seq": "dqwaeawqd",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:filteredentityraycast": {
+		"seq": "wqded",
+		"dir": "EAST"
+	},
+	"miehex:create_sword": {
+		"seq": "eadeaqwwdwqqeaqqweewwqadaqwwww",
+		"dir": "NORTH_EAST"
+	},
+	"hierophantics:make_damage_type_trigger": {
+		"seq": "qqqqqawwqdwaqqwawqwa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexflow:for_range/floodfill/pure": {
+		"seq": "dadadadqadadwdadadwdadaddwwawwaadaddwaaddad",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:const/null": {
+		"seq": "d",
+		"dir": "EAST"
+	},
+	"oneironaut:writerodramremote": {
+		"seq": "ewdedwqwqwdedwqwaaw",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:empty_prfn": {
+		"seq": "qwawqwaqwweqqqq",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:get_hand_lamp_use_time": {
+		"seq": "qwddedqwddwa",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:dismount": {
+		"seq": "awqqaee",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:write_necklace": {
+		"seq": "wadeeeeeq",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:media": {
+		"seq": "wewdwewwqaqqwedeweewaqwedewwqwwedewwqeewaqawwedewewewdwewewedeweewaqwedewwqwwedewwqeeewedewewewdwewewedewwaqawewaqwedewwqwwedewwqeeewedew",
+		"dir": "SOUTH_WEST"
+	},
+	"hexportation:get_sink_inv": {
+		"seq": "deeedeqeeeeedw",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:free_mind": {
+		"seq": "ddeawawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexxyplanes:plane_banish": {
+		"seq": "dwawddww",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:particles": {
+		"seq": "eqqqqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexxyplanes:exit_deconstruct": {
+		"seq": "dwawdaawwwa",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_media": {
+		"seq": "ddew",
+		"dir": "WEST"
+	},
+	"hexical:break_fortune": {
+		"seq": "qaqqqqqdeeeqeee",
+		"dir": "EAST"
+	},
+	"hexical:color_scroll": {
+		"seq": "wqwawqwqawawaedd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:read/local": {
+		"seq": "qeewdweddw",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:is_sleeping": {
+		"seq": "aqaew",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:shader_lines": {
+		"seq": "eedwwawwdee",
+		"dir": "WEST"
+	},
+	"moreiotas:string/chat/prefix/set": {
+		"seq": "qwaqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdim:dim/pos/set": {
+		"seq": "awqwawqdqawwwaq",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:string/comma": {
+		"seq": "qa",
+		"dir": "EAST"
+	},
+	"hexical:recharge_lamp": {
+		"seq": "qaqwawqwqqwqwqwqwqwqq",
+		"dir": "EAST"
+	},
+	"scryglass:draw_text": {
+		"seq": "aaqdwdwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:halt": {
+		"seq": "aqdee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:duplicate": {
+		"seq": "aadaa",
+		"dir": "EAST"
+	},
+	"hexcasting:swizzle": {
+		"seq": "qaawdde",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:getdimheight": {
+		"seq": "awqqqwqwqwqwqwq",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:link": {
+		"seq": "eaqaaeqqqqqaweaqaaw",
+		"dir": "EAST"
+	},
+	"oneironaut:applymindrender": {
+		"seq": "qweqadeqadeqadqqqwdaqedaqedaqeqaqdwawdwawdwaqawdwawdwawddwwwwwqdeddw",
+		"dir": "EAST"
+	},
+	"hexpose:get_armor": {
+		"seq": "qaqddqeeeeqd",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/transfer/others/allow": {
+		"seq": "eeeeeqwweqqqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/write": {
+		"seq": "wedqdewaqddqd",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:castor": {
+		"seq": "adadee",
+		"dir": "NORTH_WEST"
+	},
+	"hexthingy:things/pasteurpurification": {
+		"seq": "aqqqqa",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:reflection": {
+		"seq": "wqwawqwweeeqeewqweeqeeedeeeqeewqweeqeedqweqqqewqqweqqqewaawdwqwdwwwdwqwdw",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:matrix/determinant": {
+		"seq": "aeawwaeawaw",
+		"dir": "WEST"
+	},
+	"hexical:pling": {
+		"seq": "eqqqada",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:summon_rain": {
+		"seq": "wwweeewwweewdawdwad",
+		"dir": "WEST"
+	},
+	"hexical:piston": {
+		"seq": "wqwawqwqqqeqq",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:getbystatussingle": {
+		"seq": "eaeeeeeae",
+		"dir": "EAST"
+	},
+	"hexpose:item_name": {
+		"seq": "qwawqwaqea",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:is_brainswept": {
+		"seq": "qqqaqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"scryglass:draw_rect": {
+		"seq": "aaqdwdwdewaq",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:getdim/overworld": {
+		"seq": "wqwqwqwqwqwawedewdwedew",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:send_telepathy": {
+		"seq": "qqqqwaqa",
+		"dir": "EAST"
+	},
+	"caduceus:eval/prompt": {
+		"seq": "wdeaqe",
+		"dir": "EAST"
+	},
+	"hexical:shuffle_pattern": {
+		"seq": "aqqqdae",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:xmbug": {
+		"seq": "qqqaq",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:applynotmissing": {
+		"seq": "qdaeqeawaeqeadqqdeed",
+		"dir": "SOUTH_WEST"
+	},
+	"hexweb:get_host": {
+		"seq": "eqewdewqeeaa",
+		"dir": "NORTH_WEST"
+	},
+	"slate_work:get_storage": {
+		"seq": "eaqwqaeqqdeewweedq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:mote/split": {
+		"seq": "eaqaaw",
+		"dir": "EAST"
+	},
+	"hexal:mote/storage/contains": {
+		"seq": "dwqaeaqwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexthingy:allaycreation": {
+		"seq": "qqqqqweeweeaeeqeeeeeweeweeaeeaeeweedqqqqdadedaddwwqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:piercing_raycast": {
+		"seq": "wqqddqeqddq",
+		"dir": "EAST"
+	},
+	"hexboard:literal_resolve": {
+		"seq": "wqawqwewdewee",
+		"dir": "NORTH_EAST"
+	},
+	"hexportation:get_view_amount": {
+		"seq": "adeeedewq",
+		"dir": "EAST"
+	},
+	"hexportation:send_item_filt": {
+		"seq": "deeedewadeeede",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:vanish_scroll": {
+		"seq": "wqwawqwqaqqa",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:shift/right/arithmetic": {
+		"seq": "eaqq",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:allay_move": {
+		"seq": "qaawawaaq",
+		"dir": "EAST"
+	},
+	"hexal:mote/trade/get": {
+		"seq": "awdedwaawwqded",
+		"dir": "SOUTH_EAST"
+	},
+	"hex_machina:contain": {
+		"seq": "qqqqqeawa",
+		"dir": "WEST"
+	},
+	"hexcellular:create_property": {
+		"seq": "aawe",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:const/vec/nz": {
+		"seq": "eeeeeqd",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:get_entity/bit": {
+		"seq": "qqwwewewewewewwqqdaqaaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:deconstruct_vec": {
+		"seq": "qeeeee",
+		"dir": "EAST"
+	},
+	"phlexiful:read_pants_media": {
+		"seq": "aeawaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexecuteif:can_place_block": {
+		"seq": "eeeeedeed",
+		"dir": "SOUTH_EAST"
+	},
+	"overevaluate:athena_print": {
+		"seq": "dweaqqqqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:key_shelf": {
+		"seq": "qaqqadaq",
+		"dir": "EAST"
+	},
+	"hexical:write_charmed_proxy": {
+		"seq": "edewqaqqdeeeee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:rotate_block": {
+		"seq": "edeeeeeweewadeeed",
+		"dir": "EAST"
+	},
+	"hexical:tweak_mage_block": {
+		"seq": "deeadwd",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:potion/levitation": {
+		"seq": "qqqqqawwawawd",
+		"dir": "WEST"
+	},
+	"hexical:get_arch_lamp_use_time": {
+		"seq": "qaqwddedqwddwa",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:readidea": {
+		"seq": "qwqwqwqwqwqqqwedewq",
+		"dir": "WEST"
+	},
+	"complexhex:mattoquat": {
+		"seq": "waqqqqqeeawwaeaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexxyplanes:plane_exit": {
+		"seq": "dwawdqaqwwwqaeqwq",
+		"dir": "NORTH_EAST"
+	},
+	"hexdim:dim/rel/from": {
+		"seq": "daqqad",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:get_hand_lamp_velocity": {
+		"seq": "qwddedqew",
+		"dir": "SOUTH_WEST"
+	},
+	"hexflow:weak_escape": {
+		"seq": "qqqaww",
+		"dir": "WEST"
+	},
+	"overevaluate:athena": {
+		"seq": "dweaqqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:const/double/pi": {
+		"seq": "qdwdq",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:getbystatusinverse": {
+		"seq": "qweeeeewq",
+		"dir": "EAST"
+	},
+	"hexical:discharm": {
+		"seq": "qaqwddaaeawaea",
+		"dir": "NORTH_EAST"
+	},
+	"lessertp:lesser_tp": {
+		"seq": "edqdewqaeaq",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/move/speed/set": {
+		"seq": "aeawqqqae",
+		"dir": "WEST"
+	},
+	"complexhex:qunmake": {
+		"seq": "wdeeeeeq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:bounding_box": {
+		"seq": "aeqeawaeqeaqqeqaqeq",
+		"dir": "EAST"
+	},
+	"hexthings:requote": {
+		"seq": "deee",
+		"dir": "NORTH_WEST"
+	},
+	"overevaluate:themis": {
+		"seq": "dwaad",
+		"dir": "WEST"
+	},
+	"hierophantics:mute_mind": {
+		"seq": "ddweeee",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:item/inventory/items": {
+		"seq": "dewqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:simulate_firework": {
+		"seq": "dedwaqwqqwqa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:const/false": {
+		"seq": "dedq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:craft/artifact": {
+		"seq": "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq",
+		"dir": "EAST"
+	},
+	"hexstruction:rotate_clockwise": {
+		"seq": "aeqeawaeqeaaede",
+		"dir": "EAST"
+	},
+	"miehex:enchant_add": {
+		"seq": "qawwwwaqeeeaqwwqaee",
+		"dir": "EAST"
+	},
+	"hexpose:get_air": {
+		"seq": "wwaade",
+		"dir": "EAST"
+	},
+	"autumnfloods:zone_block": {
+		"seq": "qqqqqwdeddwww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:split_text": {
+		"seq": "awaqeeeeedwe",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_arch_lamp_velocity": {
+		"seq": "qaqwddedqew",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:hastenature5": {
+		"seq": "aeaeaeaeaeadawawwwdwdww",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:create_symbols": {
+		"seq": "wqwqwqwqwqwawwaqqqqqddewqa",
+		"dir": "EAST"
+	},
+	"hexcasting:not_equals": {
+		"seq": "da",
+		"dir": "EAST"
+	},
+	"moreiotas:string/block/get": {
+		"seq": "awqwawqe",
+		"dir": "EAST"
+	},
+	"autumnfloods:restock": {
+		"seq": "wwedewqqqqqwed",
+		"dir": "WEST"
+	},
+	"moreiotas:zone_entity/type": {
+		"seq": "waweeeeewaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:theodolite": {
+		"seq": "wqaa",
+		"dir": "EAST"
+	},
+	"oneironaut:checksignature": {
+		"seq": "qqaqwedeed",
+		"dir": "EAST"
+	},
+	"hexcasting:break_block": {
+		"seq": "qaqqqqq",
+		"dir": "EAST"
+	},
+	"hexical:read_shelf": {
+		"seq": "qaqqqada",
+		"dir": "EAST"
+	},
+	"hexecuteif:inv_transfer_item": {
+		"seq": "dwewdwedwwadeeedewadeeed",
+		"dir": "NORTH_WEST"
+	},
+	"overevaluate:athena_log": {
+		"seq": "dweaqqqqd",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:back_to_overworld": {
+		"seq": "wedwewwdwew",
+		"dir": "NORTH_EAST"
+	},
+	"slate_work:set_slot": {
+		"seq": "eaqwqaeqawawa",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:merge": {
+		"seq": "wwqaqweeeeewqa",
+		"dir": "EAST"
+	},
+	"hexal:gate/mark/get": {
+		"seq": "edwwdeeede",
+		"dir": "EAST"
+	},
+	"hexpose:biome_to_villager": {
+		"seq": "qeqwqwqwqwqeqawewwqqwwqwwqqww",
+		"dir": "EAST"
+	},
+	"hexpose:cat_variant": {
+		"seq": "wqwqqwqwawaaw",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:string/chat/all": {
+		"seq": "wded",
+		"dir": "EAST"
+	},
+	"hexical:get_arch_lamp_storage": {
+		"seq": "qaqwddedqwaqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:link/comm/num": {
+		"seq": "aweeeeewaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:mirror_left_right": {
+		"seq": "aeqeawaeqeaaewq",
+		"dir": "EAST"
+	},
+	"hexparse:donate": {
+		"seq": "qqdqqdqqqqqdqqdqqew",
+		"dir": "EAST"
+	},
+	"hexcasting:eval": {
+		"seq": "deaqq",
+		"dir": "SOUTH_EAST"
+	},
+	"complexhex:quattomat": {
+		"seq": "wdeeeeeqeawwaeaww",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:rodloopactive": {
+		"seq": "qwqqqwqaqded",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:matrix/concat/hori": {
+		"seq": "dwwdqdwwdwdwaqawd",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:type/entity": {
+		"seq": "qawde",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:writable": {
+		"seq": "deeeeeq",
+		"dir": "EAST"
+	},
+	"miehex:rotatevector": {
+		"seq": "wdww",
+		"dir": "EAST"
+	},
+	"lapisworks:spherical_dstl": {
+		"seq": "wqwqwqwqwqwaeaqaaeaqaa",
+		"dir": "NORTH_WEST"
+	},
+	"hexstruction:rotate_counterclockwise": {
+		"seq": "aeqeawaeqeaqqaq",
+		"dir": "EAST"
+	},
+	"autumnfloods:get_entity/not_player": {
+		"seq": "qqqqqwdedd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:gate/mark": {
+		"seq": "qaqeede",
+		"dir": "WEST"
+	},
+	"complexhex:const/complex/i": {
+		"seq": "wqq",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:lightningbending": {
+		"seq": "wewdawdewqewdqqeedqe",
+		"dir": "EAST"
+	},
+	"hexical:modify_block_bouncy": {
+		"seq": "deeqa",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:gib_reach": {
+		"seq": "edewwqewdwwewdaw",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:exchant_exchange": {
+		"seq": "eeeeewdqdqdqdqdqdadwdwd",
+		"dir": "EAST"
+	},
+	"hexcasting:unappend": {
+		"seq": "qaeaq",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:is_snack": {
+		"seq": "adaqqqddaq",
+		"dir": "WEST"
+	},
+	"hexoverpowered:factor_cut": {
+		"seq": "waawaawawdeddwaaqawdwddwddw",
+		"dir": "WEST"
+	},
+	"hexweb:get_element": {
+		"seq": "edadeedd",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:circle/impetus_pos": {
+		"seq": "eaqwqae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexautomata:event/write": {
+		"seq": "aqaedwaqeeeeed",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:identify": {
+		"seq": "qqqqqe",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:get_dye": {
+		"seq": "weedwa",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:getdim2": {
+		"seq": "wqwqwqwqwqwaqeeq",
+		"dir": "WEST"
+	},
+	"miehex:block_var_writes": {
+		"seq": "waqqqqdae",
+		"dir": "EAST"
+	},
+	"hexical:egg": {
+		"seq": "qqqwaqaaqeeewdedde",
+		"dir": "SOUTH_EAST"
+	},
+	"lapisworks:teach_song": {
+		"seq": "aawwawqwwdd",
+		"dir": "WEST"
+	},
+	"hexoverpowered:mind_patterns": {
+		"seq": "waawweeeeaaeaeaeaeaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:spike": {
+		"seq": "qdqdqdqdww",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:rotate_entity": {
+		"seq": "qqqdaqqqa",
+		"dir": "EAST"
+	},
+	"hexal:get_entity/wisp": {
+		"seq": "qqwdedwqqdaqaaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexboard:resolve": {
+		"seq": "wqawqwewdeweq",
+		"dir": "NORTH_EAST"
+	},
+	"hexboard:delete": {
+		"seq": "wqawqwewdewed",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:get_target": {
+		"seq": "wadwdqdwd",
+		"dir": "EAST"
+	},
+	"lapisworks:create_enchsent2": {
+		"seq": "wdwewdwwwdwwwdwqwdwwwdw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:set_evocation": {
+		"seq": "wwaqqqqqeqdedwwqwqwwdedwwqwqw",
+		"dir": "EAST"
+	},
+	"hexcasting:potion/poison": {
+		"seq": "qqqqqadwawaww",
+		"dir": "SOUTH_EAST"
+	},
+	"lapisworks:flay_artmind1": {
+		"seq": "ewewedwqwaqaedqdeaqdewewe",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:getrodstamp": {
+		"seq": "qwqqqwqawaaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:append": {
+		"seq": "edqde",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:get_all_motes": {
+		"seq": "wwaqqwdedwqq",
+		"dir": "EAST"
+	},
+	"hexal:gate/unmark": {
+		"seq": "edeqqaq",
+		"dir": "EAST"
+	},
+	"hexcasting:brainsweep": {
+		"seq": "qeqwqwqwqwqeqaeqeaqeqaeqaqded",
+		"dir": "NORTH_EAST"
+	},
+	"phlexiful:get_pants_threshhold": {
+		"seq": "dqawa",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:item_rarity": {
+		"seq": "wqqed",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:coerce_axial": {
+		"seq": "qqqqqaww",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:all_in_one": {
+		"seq": "qqw",
+		"dir": "WEST"
+	},
+	"hexthings:uiua_rotate": {
+		"seq": "qaeaqweeee",
+		"dir": "NORTH_WEST"
+	},
+	"moreiotas:string/name/set": {
+		"seq": "aqeeqaaeweeewe",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:flower": {
+		"seq": "weqqqqqwaeaeaeaeaea",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:set_hand_lamp_storage": {
+		"seq": "qwddedqedeeeee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:wisp/seon/get": {
+		"seq": "daqweewqaeaqweewqaqwwww",
+		"dir": "EAST"
+	},
+	"oneironaut:getsoulprint": {
+		"seq": "qqaqwedee",
+		"dir": "EAST"
+	},
+	"hexal:factorial": {
+		"seq": "wawdedwaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:save_structure": {
+		"seq": "dqeqdwdqeqd",
+		"dir": "WEST"
+	},
+	"hexportation:transplace": {
+		"seq": "aqaawdaqqqaqeaqaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexxyplanes:enter_plane": {
+		"seq": "dwawdeewedwwqqqwwqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/trigger/comm": {
+		"seq": "aqqqqqwdeddw",
+		"dir": "EAST"
+	},
+	"lapisworks:deposit": {
+		"seq": "qaqqdwdwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/summon/ticking": {
+		"seq": "aqaweewaqawee",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:xmdebug": {
+		"seq": "qaqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:media_max_stack": {
+		"seq": "ddeaq",
+		"dir": "EAST"
+	},
+	"ephemera:getbystatus": {
+		"seq": "ewqqqqqwe",
+		"dir": "EAST"
+	},
+	"hexcasting:entity_pos/foot": {
+		"seq": "dd",
+		"dir": "NORTH_EAST"
+	},
+	"hexparse:compile": {
+		"seq": "aqqqqqeawqwqwqwqwqwdeweweqeweweqewewe",
+		"dir": "EAST"
+	},
+	"hexical:periwinkle": {
+		"seq": "wwwaqdadaadadqqqeaeq",
+		"dir": "EAST"
+	},
+	"hexical:wristpocket": {
+		"seq": "aaqqa",
+		"dir": "WEST"
+	},
+	"hexweb:create_json": {
+		"seq": "edade",
+		"dir": "NORTH_WEST"
+	},
+	"hexdim:dim/cast/activate": {
+		"seq": "deaqqeweeeeewdqdqdqdqdq",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:craftbottomlesstrinket": {
+		"seq": "wwqeeeeewqqqqqewwaqeqwqeqqqeqwqeq",
+		"dir": "EAST"
+	},
+	"lapisworks:ask_simp": {
+		"seq": "eeeqwdeaqqeawqqwwqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:text_color": {
+		"seq": "awaqeeeeewded",
+		"dir": "SOUTH_WEST"
+	},
+	"hexweb:set": {
+		"seq": "eqewdewqeeaadd",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:floor": {
+		"seq": "ewq",
+		"dir": "EAST"
+	},
+	"hexical:glow_scroll": {
+		"seq": "wqwawqwqawawaewdwdw",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:test": {
+		"seq": "adaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdebug:splicing/view_index/read": {
+		"seq": "wqaeaqwdwaqaw",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:modify_block_energized": {
+		"seq": "deewad",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:flight/can_fly": {
+		"seq": "dwdwdeweaqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:extinguish": {
+		"seq": "ddedwdwd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:is_meat": {
+		"seq": "adaqqqddaed",
+		"dir": "WEST"
+	},
+	"hexcasting:zone_entity/not_player": {
+		"seq": "eeeeewaqaawe",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:eval/cc": {
+		"seq": "qwaqde",
+		"dir": "NORTH_WEST"
+	},
+	"moreiotas:item/off_hand": {
+		"seq": "qeda",
+		"dir": "EAST"
+	},
+	"miehex:block_var": {
+		"seq": "aqqqqdae",
+		"dir": "EAST"
+	},
+	"hexpose:get_weather": {
+		"seq": "eweweweweweeeaedqdqde",
+		"dir": "WEST"
+	},
+	"hexportation:spit": {
+		"seq": "daqqqaqeaqaa",
+		"dir": "EAST"
+	},
+	"moreiotas:string/parse": {
+		"seq": "aqwaq",
+		"dir": "EAST"
+	},
+	"oneironaut:readsentinel": {
+		"seq": "waeawaeddwwd",
+		"dir": "EAST"
+	},
+	"hexcasting:greater_eq": {
+		"seq": "ee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:tick": {
+		"seq": "wwwdwdwwwawqqeqwqqwqeqwqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:congruent": {
+		"seq": "aaqd",
+		"dir": "EAST"
+	},
+	"hexal:wisp/summon/projectile": {
+		"seq": "aqaeqeeeee",
+		"dir": "NORTH_WEST"
+	},
+	"phlexiful:destroy_block": {
+		"seq": "qaqqqqqwaeaea",
+		"dir": "EAST"
+	},
+	"hexical:click": {
+		"seq": "eqqadaq",
+		"dir": "NORTH_EAST"
+	},
+	"hexdebug:splicing/clipboard/readable": {
+		"seq": "wqaeaqweeeedww",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:push": {
+		"seq": "aq",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:hastenature2": {
+		"seq": "wawqwaweawawwwdwdww",
+		"dir": "WEST"
+	},
+	"hexical:confetti": {
+		"seq": "awddeqaedd",
+		"dir": "EAST"
+	},
+	"complexhex:translatebit": {
+		"seq": "wqwqwqwqwqwawwaqaeaqe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:wisp/trigger/tick": {
+		"seq": "aqawded",
+		"dir": "NORTH_WEST"
+	},
+	"hexdebug:splicing/selection/write": {
+		"seq": "wedqdewqqqqae",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:soroban_pop": {
+		"seq": "qdeeaae",
+		"dir": "NORTH_EAST"
+	},
+	"hexdebug:const/cognitohazard": {
+		"seq": "wdeaqqdqeedqadqeedqaeadeaqqeadeaqqdqdeaqqeaeedqaw",
+		"dir": "NORTH_WEST"
+	},
+	"complexhex:bubble": {
+		"seq": "qdqdqdqdqdq",
+		"dir": "SOUTH_EAST"
+	},
+	"scryglass:get_visions": {
+		"seq": "dwdwd",
+		"dir": "EAST"
+	},
+	"miehex:collect_consciousness": {
+		"seq": "qqqqqwqqwqwqwqwqwwqaeqawwwawwwaww",
+		"dir": "EAST"
+	},
+	"hexical:zone_specklike": {
+		"seq": "qqqqqwdeddwqde",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:mage_hand": {
+		"seq": "aaqqaeea",
+		"dir": "WEST"
+	},
+	"ephemera:particleburst": {
+		"seq": "deeeewaaddwqqqqa",
+		"dir": "EAST"
+	},
+	"hexportation:send_item": {
+		"seq": "qadeeedewe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:kill_specklike": {
+		"seq": "adeaqde",
+		"dir": "SOUTH_WEST"
+	},
+	"hextra:hextra_conjurearrow": {
+		"seq": "wwdedqde",
+		"dir": "NORTH_EAST"
+	},
+	"hierophantics:set_mind_hex": {
+		"seq": "ddeedd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:zone_entity/animal": {
+		"seq": "qqqqqwdeddwa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:running/mul": {
+		"seq": "qaawaaq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:2dup": {
+		"seq": "aadadaaw",
+		"dir": "EAST"
+	},
+	"moreiotas:matrix/split/hori": {
+		"seq": "dwaqawdwdwwdqdwwd",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:const/quaternion/i": {
+		"seq": "waqqqqqeq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:light_level": {
+		"seq": "qedqde",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:charm": {
+		"seq": "edeeeeeqaaqeeeadweeqeeqdqeeqeeqde",
+		"dir": "SOUTH_EAST"
+	},
+	"hexoverpowered:mind_stack/push": {
+		"seq": "waawweeeeedd",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:checkenchant": {
+		"seq": "aqawwqqwqqw",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:item_control": {
+		"seq": "dwewdweqawqwa",
+		"dir": "EAST"
+	},
+	"hexdim:dim/time": {
+		"seq": "qqqqqwaeaeaeaeaeadqwdwqwdwdwqw",
+		"dir": "NORTH_EAST"
+	},
+	"hexparse:remove_comments": {
+		"seq": "dadadedadadwqaeaqeww",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:zone_entity/not_type": {
+		"seq": "wdwqqqqqwdw",
+		"dir": "NORTH_EAST"
+	},
+	"ioticblocks:write/index": {
+		"seq": "deeeeeqawqwaw",
+		"dir": "EAST"
+	},
+	"hexpose:entity_width": {
+		"seq": "dwe",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:blink": {
+		"seq": "awqqqwaq",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:getdurabilitymainhand": {
+		"seq": "qwdea",
+		"dir": "EAST"
+	},
+	"moreiotas:matrix/rotation": {
+		"seq": "awwaeawwawawddw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:splat": {
+		"seq": "qwaeawq",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:greater": {
+		"seq": "e",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:sub": {
+		"seq": "wddw",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:get_entity_look": {
+		"seq": "wa",
+		"dir": "EAST"
+	},
+	"yaha:sussify_block": {
+		"seq": "eqqqeawqwqwqwqwqw",
+		"dir": "EAST"
+	},
+	"lapisworks:absorb_mind": {
+		"seq": "aawqqwqqqaede",
+		"dir": "WEST"
+	},
+	"moreiotas:type/item_held": {
+		"seq": "edeedqd",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:idea_entry": {
+		"seq": "wqwawewawqwdwewdwwwdwwqaq",
+		"dir": "EAST"
+	},
+	"hexthings:insert": {
+		"seq": "wqwaeawqw",
+		"dir": "NORTH_WEST"
+	},
+	"overevaluate:tutu": {
+		"seq": "eedqa",
+		"dir": "WEST"
+	},
+	"hexflow:for_range/cube": {
+		"seq": "dadadqqaqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:place_block": {
+		"seq": "eeeeede",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:armour": {
+		"seq": "wqqqqw",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:make_hunger_trigger": {
+		"seq": "qqqqqawwaedwda",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:writable/entity": {
+		"seq": "wdwewewewewewqw",
+		"dir": "EAST"
+	},
+	"ephemera:paintconjured": {
+		"seq": "eqdweeqdwweeqddqdwwwdeww",
+		"dir": "WEST"
+	},
+	"hexical:index_grimoire": {
+		"seq": "aqaeaqwqa",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:get_contain": {
+		"seq": "eeeeedewdwd",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:blockstate_rotation": {
+		"seq": "qaqqqqqwadeeed",
+		"dir": "EAST"
+	},
+	"overevaluate:swap_two_three": {
+		"seq": "aawede",
+		"dir": "EAST"
+	},
+	"lapisworks:check_attr": {
+		"seq": "wwwaqeeqawww",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_effect_category": {
+		"seq": "wqqqaawd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:get_saturation": {
+		"seq": "adaqqqddqw",
+		"dir": "WEST"
+	},
+	"hexpose:shooter": {
+		"seq": "aadedade",
+		"dir": "EAST"
+	},
+	"hexcassettes:killall": {
+		"seq": "eqeweweweweqedwqeeeeewwqqwqwqqw",
+		"dir": "WEST"
+	},
+	"hexpose:text_bold": {
+		"seq": "awaqeeeeedd",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:janus": {
+		"seq": "aadee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:get_caster": {
+		"seq": "qaq",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:no": {
+		"seq": "wwaedadqdqdqdade",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:banish_other_enchsent": {
+		"seq": "eeeeedwqwawwwawewawwwaw",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:networkscan": {
+		"seq": "eqqqqqaweqaeaq",
+		"dir": "EAST"
+	},
+	"lapisworks:imbue_amel": {
+		"seq": "wqwwawwqwwaqwewaawewa",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_einstein": {
+		"seq": "aqwawqwqqwqwqwqwqwq",
+		"dir": "SOUTH_WEST"
+	},
+	"hex_machina:roulette": {
+		"seq": "qqqeaqaa",
+		"dir": "WEST"
+	},
+	"hexical:read_charmed": {
+		"seq": "waqqqqqeaqeaeaeaeaeq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:last_n_list": {
+		"seq": "ewdqdwe",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:conjure_mesh": {
+		"seq": "qaqqqqqwqqqdeeweweeaeewewee",
+		"dir": "EAST"
+	},
+	"hexical:dye": {
+		"seq": "dwaqqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:shout_telepathy": {
+		"seq": "daqqqqwa",
+		"dir": "EAST"
+	},
+	"hexcasting:get_entity": {
+		"seq": "qqqqqdaqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hierophantics:make_fall_trigger": {
+		"seq": "qqqqqawweawawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:potion/absorption": {
+		"seq": "qqaawawaeqqdd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdim:dim/kidnap": {
+		"seq": "wawewawewawewawewawewawwwqwqwqwqwqwaeqqqqqaww",
+		"dir": "SOUTH_WEST"
+	},
+	"hexflow:pure_reduce": {
+		"seq": "waawadadad",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:mote/storage/bind/temp": {
+		"seq": "edewedewede",
+		"dir": "NORTH_EAST"
+	},
+	"hexdim:dim/cast/deactivate": {
+		"seq": "aqdeeqeaeaeaeaeae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdebug:splicing/clipboard/writable": {
+		"seq": "wedqdewqqqqaww",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:get_structure": {
+		"seq": "wwaqqqqqea",
+		"dir": "SOUTH_WEST"
+	},
+	"hexxyplanes:exit_reveal": {
+		"seq": "dwawdqaqwwwqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:mote/contained/get": {
+		"seq": "aweeeeewaaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:env_circle": {
+		"seq": "waaqdeaqwqae",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:read_mesh": {
+		"seq": "edeeeeeweeeaqqwqwqq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:breedable": {
+		"seq": "awaaqdqaawa",
+		"dir": "EAST"
+	},
+	"hexpose:get_health": {
+		"seq": "wddwaqqwawq",
+		"dir": "SOUTH_EAST"
+	},
+	"complexhex:summonitemdisplay": {
+		"seq": "wqwqwqwqwqwaqedeaaedeq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:sneaking": {
+		"seq": "wede",
+		"dir": "NORTH_WEST"
+	},
+	"hexflow:for_range/line/pure": {
+		"seq": "dadadadawwa",
+		"dir": "NORTH_EAST"
+	},
+	"oneironaut:resistdetection": {
+		"seq": "wawwwdwdwwaqqqqqe",
+		"dir": "EAST"
+	},
+	"hexical:conjure_mage_block": {
+		"seq": "dee",
+		"dir": "NORTH_WEST"
+	},
+	"oneironaut:getdim1": {
+		"seq": "wqwqwqwqwqwaeqqe",
+		"dir": "WEST"
+	},
+	"oneironaut:readideawriter": {
+		"seq": "qwqwqwqwqwqaeqedeqe",
+		"dir": "WEST"
+	},
+	"hexboard:move": {
+		"seq": "wqawqwewdewew",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:chat_listen": {
+		"seq": "qadqa",
+		"dir": "WEST"
+	},
+	"hexcasting:raycast/entity": {
+		"seq": "weaqa",
+		"dir": "EAST"
+	},
+	"hexthings:uiua_take": {
+		"seq": "qaeaqwd",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:donate": {
+		"seq": "dadawaawad",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_inventory": {
+		"seq": "edeeeeeqdee",
+		"dir": "WEST"
+	},
+	"hexal:health": {
+		"seq": "aqwawqa",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:sample_pigment": {
+		"seq": "edewqaqqqqqwqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:print": {
+		"seq": "de",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:empty_list": {
+		"seq": "qqaeaae",
+		"dir": "NORTH_EAST"
+	},
+	"slate_work:set_craft": {
+		"seq": "eaqwqaeqwaeadawwadaeaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:jumping": {
+		"seq": "qaqdaqqa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:const/vec/ny": {
+		"seq": "eeeeeqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:break_silk": {
+		"seq": "aqaeaqdeeweweedq",
+		"dir": "EAST"
+	},
+	"lapisworks:thought_sieve": {
+		"seq": "qadaadadqaqdadqaq",
+		"dir": "WEST"
+	},
+	"hexcasting:rotate_reverse": {
+		"seq": "ddqdd",
+		"dir": "NORTH_EAST"
+	},
+	"hexweb:get_response": {
+		"seq": "qqqqwweaaead",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:item_lore": {
+		"seq": "dwewdwedea",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:potion/strength": {
+		"seq": "aawawaeqqqqdd",
+		"dir": "EAST"
+	},
+	"ephemera:getrider": {
+		"seq": "eqqaqqwaaw",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:construct": {
+		"seq": "ddewedd",
+		"dir": "SOUTH_EAST"
+	},
+	"complexhex:rotatebit": {
+		"seq": "wqwqwqwqwqwaqeeeeedww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:zone_entity/wisp": {
+		"seq": "qqwdedwqqwdeddww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexflow:pure_map": {
+		"seq": "dadadad",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:revealtoother": {
+		"seq": "qde",
+		"dir": "EAST"
+	},
+	"scryglass:get_window_size": {
+		"seq": "aawawaa",
+		"dir": "NORTH_EAST"
+	},
+	"hexdim:dim/rel/to": {
+		"seq": "adeeda",
+		"dir": "EAST"
+	},
+	"hexpose:get_max_health": {
+		"seq": "wddwwawaeqwawq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:block_blast_resistance": {
+		"seq": "qaqqqqqewaawaawa",
+		"dir": "EAST"
+	},
+	"moreiotas:altdiv": {
+		"seq": "wdedwdwwdqdww",
+		"dir": "NORTH_EAST"
+	},
+	"hexdim:dim/kick": {
+		"seq": "wwdeeeeeqdwewewewewewwwdwqwdwqwdwqwdwqwdwqwdw",
+		"dir": "EAST"
+	},
+	"hexcasting:teleport/great": {
+		"seq": "wwwqqqwwwqqeqqwwwqqwqqdqqqqqdqq",
+		"dir": "EAST"
+	},
+	"hexcasting:mul": {
+		"seq": "waqaw",
+		"dir": "SOUTH_EAST"
+	},
+	"overevaluate:sisyphus": {
+		"seq": "qaqwede",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:bonemeal": {
+		"seq": "wqaqwawqaqw",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:phiangle": {
+		"seq": "wadqaqdawewadqaqdaw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:roll_specklike": {
+		"seq": "adeqqqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:function_check_care": {
+		"seq": "awqdeewadq",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:matrix/make": {
+		"seq": "awwaeawwaadwa",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:get_tag": {
+		"seq": "dwedewq",
+		"dir": "EAST"
+	},
+	"hexal:running/sum": {
+		"seq": "aea",
+		"dir": "WEST"
+	},
+	"hexical:roast": {
+		"seq": "aqqwwqqawdadedad",
+		"dir": "NORTH_WEST"
+	},
+	"hex_machina:capsule/has_entity": {
+		"seq": "qqqqqwaddwdww",
+		"dir": "WEST"
+	},
+	"lapisworks:fireresist": {
+		"seq": "wwqwqwadwawdawqwaeqqaqqe",
+		"dir": "EAST"
+	},
+	"hexal:zone_entity/not_wisp": {
+		"seq": "eewaqaweewaqaaww",
+		"dir": "NORTH_EAST"
+	},
+	"complexhex:shift/right/logical": {
+		"seq": "eaqqdee",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:everbook/toggle_macro": {
+		"seq": "eweeewedww",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:space": {
+		"seq": "wwwwwqwwwwwqwwwwwqwwwwwqwwwwwqwwwwwawwwwwqwwawwqwwqwwqwwqwwqwedewwwewwwedwaewwwedwewwqawwqeewwwedwwaewawwqawwweeeawqeeewwewdedwewwewdedwewwewdedwewweqewwewdedwewweaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:greater_blink": {
+		"seq": "wqawawaqwqwqawawaqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexthingy:things/cleaneffect": {
+		"seq": "qqqqwaqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:get_offhand": {
+		"seq": "edeeee",
+		"dir": "NORTH_WEST"
+	},
+	"overevaluate:pollux": {
+		"seq": "dadaqq",
+		"dir": "NORTH_EAST"
+	},
+	"hierophantics:make_drop_trigger": {
+		"seq": "qqqqqawweaqaddwd",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:guide": {
+		"seq": "ede",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:pigment_specklike": {
+		"seq": "adeqqaq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:sleight": {
+		"seq": "aaqqadeeeq",
+		"dir": "WEST"
+	},
+	"hexthings:uiua_drop": {
+		"seq": "qaeaqda",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:get_chat": {
+		"seq": "dqqqaw",
+		"dir": "SOUTH_EAST"
+	},
+	"yaha:anvil": {
+		"seq": "dqdwdqdqaa",
+		"dir": "WEST"
+	},
+	"hexal:everbook/delete": {
+		"seq": "qwqqqwqaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcassettes:foretell": {
+		"seq": "eqeweweweweqedwqeeeeedww",
+		"dir": "WEST"
+	},
+	"hexical:get_evocation": {
+		"seq": "wwdeeeeeqeaqawwewewwaqawwewew",
+		"dir": "EAST"
+	},
+	"hexical:moving_down": {
+		"seq": "dedwdq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexweb:parse_json": {
+		"seq": "edadeqdwedw",
+		"dir": "NORTH_WEST"
+	},
+	"hexthings:isgreatersent": {
+		"seq": "waeawaeqqq",
+		"dir": "EAST"
+	},
+	"oneironaut:getdimscale": {
+		"seq": "wawawqwqwqwqwqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:villager_level": {
+		"seq": "qeqwqwqwqwqeqawdaeaeaeaeaea",
+		"dir": "EAST"
+	},
+	"hexecuteif:can_break_block": {
+		"seq": "qaqqqqqwa",
+		"dir": "EAST"
+	},
+	"hexpose:get_player_hunger": {
+		"seq": "qqqadaddw",
+		"dir": "WEST"
+	},
+	"hexcasting:remove_from": {
+		"seq": "edqdewaqa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:lamp_finale": {
+		"seq": "aaddaddad",
+		"dir": "EAST"
+	},
+	"lapisworks:imbue_lap": {
+		"seq": "qadwawdaqqeae",
+		"dir": "NORTH_EAST"
+	},
+	"complexhex:qmake": {
+		"seq": "waqqqqqe",
+		"dir": "SOUTH_EAST"
+	},
+	"hierophantics:make_jump_trigger": {
+		"seq": "qqqqqawwqdwdwd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexparse:switch_comment": {
+		"seq": "adadaqadadaawwqde",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:interop/pehkui/get": {
+		"seq": "aawawwawwa",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:potion/weakness": {
+		"seq": "qqqqqaqwawaw",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:cubic_exalt": {
+		"seq": "wqwawqwqqwqwq",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:craft/trinket": {
+		"seq": "wwaqqqqqeaqeaeqqqeaeq",
+		"dir": "EAST"
+	},
+	"hexpose:get_max_air": {
+		"seq": "wwaadee",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/clipboard/write": {
+		"seq": "wedqdewqqqqaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:mote/storage/set": {
+		"seq": "eeeeedw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:link/num": {
+		"seq": "qeeeeedww",
+		"dir": "WEST"
+	},
+	"yaha:time_bomb": {
+		"seq": "eewaqawee",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:create_sapling": {
+		"seq": "wawwwewdwewww",
+		"dir": "EAST"
+	},
+	"ephemera:getpropertyvalue": {
+		"seq": "qaqqqqqdwawqwaw",
+		"dir": "EAST"
+	},
+	"ephemera:ridewisp": {
+		"seq": "aqadqqdaqa",
+		"dir": "NORTH_WEST"
+	},
+	"hexweb:has_element": {
+		"seq": "edadee",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:mote/contained_type/get": {
+		"seq": "dwqqqqqwddww",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:entity_vehicle": {
+		"seq": "eqqedwewew",
+		"dir": "EAST"
+	},
+	"moreiotas:get_entity/type": {
+		"seq": "dadqqqqqdad",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:readframerotation": {
+		"seq": "wwawwqwwawwaeae",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:entity_anchor": {
+		"seq": "aawewewaqweedeewqawewe",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:moving_left": {
+		"seq": "edead",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:rectangle_block": {
+		"seq": "dwaade",
+		"dir": "EAST"
+	},
+	"hexal:mote/make": {
+		"seq": "eaqa",
+		"dir": "WEST"
+	},
+	"ephemera:getdurabilityoffhand": {
+		"seq": "aedwq",
+		"dir": "EAST"
+	},
+	"hexstruction:mirror_vertical": {
+		"seq": "eawaeqeawaeaw",
+		"dir": "EAST"
+	},
+	"hexpose:item_frame_rotation": {
+		"seq": "ewdwewdea",
+		"dir": "NORTH_EAST"
+	},
+	"hexparse:code2focus": {
+		"seq": "aqqqqqeawqwqwqwqwqwweeeeed",
+		"dir": "EAST"
+	},
+	"hexcasting:create_water": {
+		"seq": "aqawqadaq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:rotate_counterclockwise_z": {
+		"seq": "aeqeawaeqeadqa",
+		"dir": "EAST"
+	},
+	"hexcasting:zone_entity/item": {
+		"seq": "qqqqqwdeddww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:construct_vec": {
+		"seq": "eqqqqq",
+		"dir": "EAST"
+	},
+	"hexical:conjure_firework": {
+		"seq": "dedwaqwwawwqa",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:magearmor": {
+		"seq": "qaweqqwqqewaqeqqqqqad",
+		"dir": "NORTH_WEST"
+	},
+	"moreiotas:string/block/set": {
+		"seq": "dwewdweq",
+		"dir": "WEST"
+	},
+	"hexical:index_hopper": {
+		"seq": "qqqeawqwawq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:wisp/transfer/others/disallow": {
+		"seq": "eeeeeqeaqaawqeeeee",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:write_spechand": {
+		"seq": "deeeed",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/selection/read": {
+		"seq": "wqaeaqweeeedq",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:const/vec/nx": {
+		"seq": "eeeeeqa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpats:check_fire": {
+		"seq": "qqqqqwqw",
+		"dir": "WEST"
+	},
+	"moreiotas:matrix/split/vert": {
+		"seq": "awdedwawawwaeawwa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:const/vec/py": {
+		"seq": "qqqqqew",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:make_break_trigger": {
+		"seq": "qqqqqawwwqaqqqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:getstacksizedeep": {
+		"seq": "qwaeawqaqded",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:sparkle": {
+		"seq": "dqa",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:empty_dstl": {
+		"seq": "dwewdwedwwwadwewdwedw",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:prestidigitation": {
+		"seq": "wedewedew",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:matrix/identity": {
+		"seq": "awwaeawwaqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:readable": {
+		"seq": "aqqqqqe",
+		"dir": "EAST"
+	},
+	"hexal:wisp/transfer/disallow": {
+		"seq": "qqqqqeqdeddweqqqqq",
+		"dir": "NORTH_WEST"
+	},
+	"complexhex:qz": {
+		"seq": "wdeeeeeqd",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:uncrafting": {
+		"seq": "qaqqqqqwqqqeqqqeqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:shader_spider": {
+		"seq": "qaqdedaedqqdedaqaedeqd",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:conjure_gummy": {
+		"seq": "eeewdw",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:snap_list": {
+		"seq": "eawdq",
+		"dir": "EAST"
+	},
+	"hexcasting:raycast/axis": {
+		"seq": "weddwaa",
+		"dir": "EAST"
+	},
+	"hexpose:get_day": {
+		"seq": "wwawwawwqqawwdwwdwwaqwqwqwqwq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:get_blockstates": {
+		"seq": "qaqqqeqqqwqaww",
+		"dir": "EAST"
+	},
+	"hexcasting:craft/cypher": {
+		"seq": "waqqqqq",
+		"dir": "EAST"
+	},
+	"hexpose:get_enchantment_strength": {
+		"seq": "waqwwqaweede",
+		"dir": "WEST"
+	},
+	"hexautomata:event/read": {
+		"seq": "aqqqqqedwaqded",
+		"dir": "EAST"
+	},
+	"hex_machina:current_bullet": {
+		"seq": "awqqqwaqweaqaaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:circle/impetus_dir": {
+		"seq": "eaqwqaewede",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:swap_one_three": {
+		"seq": "ddwqaq",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:hastenature0": {
+		"seq": "awawwwdwdww",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:mote_contain": {
+		"seq": "eeeeedqwdwd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:for_each": {
+		"seq": "dadad",
+		"dir": "NORTH_EAST"
+	},
+	"overevaluate:create_jumble": {
+		"seq": "deaqd",
+		"dir": "WEST"
+	},
+	"hexal:link/get_index": {
+		"seq": "aeqqqqqawwd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_hand_lamp_storage": {
+		"seq": "qwddedqwaqqqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"oneironaut:craftrod": {
+		"seq": "eqqqqqawweqqqqqawweqqqqqawwdeqewwwwweqeeeqewwwwweqe",
+		"dir": "EAST"
+	},
+	"hexcasting:raycast": {
+		"seq": "wqaawdd",
+		"dir": "EAST"
+	},
+	"autumnfloods:get_contained_motes": {
+		"seq": "wwdeewaqawee",
+		"dir": "EAST"
+	},
+	"hexpose:get_effects_item": {
+		"seq": "wqqqadee",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:create_enchsent4": {
+		"seq": "wdwwwdwqwdwwwdweqaawdde",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:snowball": {
+		"seq": "ddeeeeewd",
+		"dir": "NORTH_EAST"
+	},
+	"slate_work:get_trades": {
+		"seq": "eaqwqaewedeadwdwd",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:ascii/from": {
+		"seq": "awdwae",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:has_autograph": {
+		"seq": "wwqqqqqaw",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:removestatus": {
+		"seq": "eeeeedaqdewed",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:ceil": {
+		"seq": "qwe",
+		"dir": "EAST"
+	},
+	"hexal:gate/make": {
+		"seq": "qwqwqwqwqwqqeaeaeaeaeae",
+		"dir": "WEST"
+	},
+	"hexcasting:sentinel/get_pos": {
+		"seq": "waeawaede",
+		"dir": "EAST"
+	},
+	"miehex:list_by_index": {
+		"seq": "wawdwqwaeawqwdwaw",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:collisionprobe": {
+		"seq": "qaqqqqqdaqa",
+		"dir": "NORTH_WEST"
+	},
+	"hexdebug:breakpoint/before": {
+		"seq": "awqdeew",
+		"dir": "SOUTH_WEST"
+	},
+	"hexflow:for_range/line": {
+		"seq": "dadadawwa",
+		"dir": "NORTH_EAST"
+	},
+	"hexextra:run_for": {
+		"seq": "qaweedwaqqwde",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:lesser_gate/close": {
+		"seq": "wwaqqqqqe",
+		"dir": "EAST"
+	},
+	"hexpose:count_max_stack": {
+		"seq": "edeeweeew",
+		"dir": "WEST"
+	},
+	"hierophantics:make_attack_trigger": {
+		"seq": "qqqqqawwqwedweq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexthings:empty_dict": {
+		"seq": "eaaea",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:conjure_hextito": {
+		"seq": "qaqdqaqdwawaw",
+		"dir": "EAST"
+	},
+	"lapisworks:create_enchsent0": {
+		"seq": "aqaeawdwwwdwqwdwwwdweqqaqwedeewqded",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:moving_right": {
+		"seq": "qaqda",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:disguise_mage_block": {
+		"seq": "deeadw",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:flight": {
+		"seq": "eawwaeawawaa",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:item_lore": {
+		"seq": "dwewdweedwa",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:env_ambit": {
+		"seq": "wawaw",
+		"dir": "EAST"
+	},
+	"hexecuteif:inv_slot_count": {
+		"seq": "qwawqwaqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:mote/storage/remaining_capacity/get": {
+		"seq": "awedqdewa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:deserialize_pattern": {
+		"seq": "wqqqaqwd",
+		"dir": "EAST"
+	},
+	"oneironaut:getrodpos": {
+		"seq": "qwqqqwqawaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:display_structure": {
+		"seq": "aeqeawaeqeaqed",
+		"dir": "EAST"
+	},
+	"lapisworks:check_mind": {
+		"seq": "aawqqwqqq",
+		"dir": "WEST"
+	},
+	"hexoverpowered:get_personal_media": {
+		"seq": "qqaqqea",
+		"dir": "EAST"
+	},
+	"complexhex:ascii/to": {
+		"seq": "eawdwa",
+		"dir": "EAST"
+	},
+	"lapisworks:archon_of_meaninglessness": {
+		"seq": "eedqaqddadwddwaeaeadaeqaddwedwqdadedaqqwwqqewwwaeaedqqwwwqwawaedwqqdwwaqweeeqeeewawdwqe",
+		"dir": "WEST"
+	},
+	"complexhex:const/quaternion/k": {
+		"seq": "waqqqqqed",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:circle/bounds/min": {
+		"seq": "eaqwqaewdd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:akashic/read": {
+		"seq": "qqqwqqqqqaq",
+		"dir": "WEST"
+	},
+	"complexhex:summonblockdisplay": {
+		"seq": "wqwqwqwqwqwawqaqqqqqe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:grok_push": {
+		"seq": "ewdewwde",
+		"dir": "EAST"
+	},
+	"hexcasting:destroy_water": {
+		"seq": "dedwedade",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:right_click": {
+		"seq": "edaqq",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:let_out": {
+		"seq": "ewaa",
+		"dir": "EAST"
+	},
+	"oneironaut:reviveflayed": {
+		"seq": "qeqwqqedeeeeeaqwqeqaqedqde",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_hunger": {
+		"seq": "adaqqqddqe",
+		"dir": "WEST"
+	},
+	"hexpose:text_underline": {
+		"seq": "awaqeeeeedw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:link/unlink": {
+		"seq": "qdeddqeeeeedwqdeddw",
+		"dir": "WEST"
+	},
+	"hexthings:dict_keys": {
+		"seq": "dqwaeawq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:potion/regeneration": {
+		"seq": "qqqqaawawaedd",
+		"dir": "NORTH_WEST"
+	},
+	"hexal:place_type": {
+		"seq": "eeeeedeeeee",
+		"dir": "WEST"
+	},
+	"slate_work:wave_speed": {
+		"seq": "eaqdaadqaeewq",
+		"dir": "SOUTH_WEST"
+	},
+	"overevaluate:dissolve_jumble": {
+		"seq": "aedqa",
+		"dir": "SOUTH_WEST"
+	},
+	"slate_work:set_sents": {
+		"seq": "waeawaewawwa",
+		"dir": "EAST"
+	},
+	"hexal:mote/villager/level/get": {
+		"seq": "qqwdedwqqaww",
+		"dir": "NORTH_WEST"
+	},
+	"moreiotas:matrix/unmake/direct": {
+		"seq": "dwwdqdwwdwdwa",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:contain_contain": {
+		"seq": "eeeeedwwdwd",
+		"dir": "EAST"
+	},
+	"miehex:list_insert": {
+		"seq": "ddeweeedq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:translate_dye": {
+		"seq": "wdwwaawwewdwwewwdwwe",
+		"dir": "EAST"
+	},
+	"moreiotas:matrix/inverse": {
+		"seq": "wwdqdwwdqaq",
+		"dir": "WEST"
+	},
+	"hexical:gasp": {
+		"seq": "aweeeeewaweeeee",
+		"dir": "NORTH_WEST"
+	},
+	"phlexiful:set_pants_threshhold": {
+		"seq": "aedwd",
+		"dir": "NORTH_WEST"
+	},
+	"moreiotas:altmul": {
+		"seq": "waqawawwaeaww",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:summon_idea_entity": {
+		"seq": "wqwqawdeaqqdeewew",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:matrix/unmake": {
+		"seq": "dwwdqdwwddawd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexdebug:splicing/enlightened/hex/read": {
+		"seq": "wqaeaqwqqqwqwqqwq",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:damage_max_stack": {
+		"seq": "qqwqqqwaqe",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:block_var_write": {
+		"seq": "deeeeadq",
+		"dir": "EAST"
+	},
+	"moreiotas:string/space": {
+		"seq": "awdwaaww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexportation:get_source_inv": {
+		"seq": "eeeeedwwadeeede",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:colorize": {
+		"seq": "awddwqawqwawq",
+		"dir": "EAST"
+	},
+	"ephemera:cancelflight": {
+		"seq": "awawaawe",
+		"dir": "SOUTH_WEST"
+	},
+	"pregxxy:get_age": {
+		"seq": "deaqqwa",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:getstatuslevel": {
+		"seq": "eeeeeqawawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:blast": {
+		"seq": "qwqqadadadewweewwe",
+		"dir": "SOUTH_EAST"
+	},
+	"ephemera:hashbits": {
+		"seq": "eedwedew",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:mote/combinable": {
+		"seq": "dedqeaqa",
+		"dir": "SOUTH_WEST"
+	},
+	"oneironaut:readrodramremote": {
+		"seq": "qwaqawewewaqawewddw",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:create_enchsent5": {
+		"seq": "wdwwwdwqwdwwwdwweeeee",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:swap_amel": {
+		"seq": "wqwawwqwaqeq",
+		"dir": "EAST"
+	},
+	"miehex:create_block/idea": {
+		"seq": "wqwawqwqwqwqwqaweeeee",
+		"dir": "EAST"
+	},
+	"hexical:moving_up": {
+		"seq": "aqaddq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexal:mote/craft/preview": {
+		"seq": "wwdwaqawdwaqwwawdedwawwqawdwaqawdww",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:cube_types": {
+		"seq": "wewdwewaqwqwaada",
+		"dir": "WEST"
+	},
+	"hexical:shader_tv": {
+		"seq": "wewdwewwawwewdwew",
+		"dir": "WEST"
+	},
+	"hexcasting:unique": {
+		"seq": "aweaqa",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:crash": {
+		"seq": "qeqwqwqwqwqeqawdweeweweewqdwwewewwewweweww",
+		"dir": "NORTH_EAST"
+	},
+	"hex_machina:expose_mind": {
+		"seq": "qwqwqwqwqeqqqaedwqqqqqw",
+		"dir": "WEST"
+	},
+	"oneironaut:advanceautomaton": {
+		"seq": "qqwqwqwaqeee",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:puzzle": {
+		"seq": "dwewdweqawqwaewqqqwaw",
+		"dir": "EAST"
+	},
+	"hexical:has_arch_lamp": {
+		"seq": "qaqwddedqeed",
+		"dir": "NORTH_EAST"
+	},
+	"hexportation:slurp": {
+		"seq": "aqaawdaqqqaqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:create_text": {
+		"seq": "awaqeeeee",
+		"dir": "SOUTH_WEST"
+	},
+	"complexhex:shift/left": {
+		"seq": "qqae",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:deconstruct": {
+		"seq": "aaqwqaa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_hand_lamp_media": {
+		"seq": "qwddedaeeeee",
+		"dir": "SOUTH_WEST"
+	},
+	"hexweb:read": {
+		"seq": "eqewdewqe",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:erase_grimoire": {
+		"seq": "aqwqaqded",
+		"dir": "WEST"
+	},
+	"miehex:idea_modify": {
+		"seq": "wewedwaqdeeaqqwqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:zone_entity/living": {
+		"seq": "qqqqqwdeddwd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:read/entity": {
+		"seq": "wawqwqwqwqwqw",
+		"dir": "EAST"
+	},
+	"hexpose:get_comparator": {
+		"seq": "eweweweweweewwddawaddww",
+		"dir": "WEST"
+	},
+	"hexpose:text_obfuscated": {
+		"seq": "awaqeeeeeda",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_arch_lamp_rotation": {
+		"seq": "qaqwddedadw",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:circle/bounds/max": {
+		"seq": "aqwqawaaqa",
+		"dir": "WEST"
+	},
+	"lapisworks:moar_attack": {
+		"seq": "qaqwweaeaqwww",
+		"dir": "EAST"
+	},
+	"oneironaut:delayrod": {
+		"seq": "qwqqqwqaqddq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexxyplanes:get_plane": {
+		"seq": "dwawd",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:freeze": {
+		"seq": "weeeweedada",
+		"dir": "WEST"
+	},
+	"hexcellular:set_property": {
+		"seq": "aawq",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:give_enchant": {
+		"seq": "dwdqewdwe",
+		"dir": "NORTH_WEST"
+	},
+	"hexdim:dim/create": {
+		"seq": "wawdwawawdwawawdwewdwqwdwqwdwqwdwqwdwqwdw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:conjure_hexburst": {
+		"seq": "aadaadqaq",
+		"dir": "EAST"
+	},
+	"hexal:wisp/move/target/set": {
+		"seq": "awqwawqaw",
+		"dir": "WEST"
+	},
+	"slate_work:wave_position": {
+		"seq": "eaqdaadqaeeaa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:sin": {
+		"seq": "qqqqqaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:create_stack": {
+		"seq": "qaqqae",
+		"dir": "EAST"
+	},
+	"miehex:allay_casting": {
+		"seq": "qqaqwwawwqaqq",
+		"dir": "EAST"
+	},
+	"hexpose:damage_stack": {
+		"seq": "eeweeewdeq",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:text_italics": {
+		"seq": "awaqeeeeede",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:conjure_speck": {
+		"seq": "ade",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_hand_lamp_rotation": {
+		"seq": "qwddedadw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexflow:for_range/floodfill": {
+		"seq": "dadadqadadwdadadwdadaddwwawwaadaddwaaddad",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:repair": {
+		"seq": "waqdqqwqqdqawwqqqqqaqedeq",
+		"dir": "WEST"
+	},
+	"hexflow:mass_rotate": {
+		"seq": "edqdewawddw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcassettes:self": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqwweeweweew",
+		"dir": "EAST"
+	},
+	"hexpose:env_offhand": {
+		"seq": "qaqqqwaaq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:singleton": {
+		"seq": "adeeed",
+		"dir": "EAST"
+	},
+	"miehex:function": {
+		"seq": "deaqqdae",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:string/name/get": {
+		"seq": "deqqeddqwqqqwq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:is_sprinting": {
+		"seq": "eaq",
+		"dir": "WEST"
+	},
+	"autumnfloods:download": {
+		"seq": "qdedwqqqqq",
+		"dir": "WEST"
+	},
+	"hierophantics:set_mind_trigger": {
+		"seq": "ddewdd",
+		"dir": "SOUTH_EAST"
+	},
+	"lapisworks:create_enchsent3": {
+		"seq": "aqaeawdwwwdwqwdwwwdweqaawddeweaqa",
+		"dir": "NORTH_WEST"
+	},
+	"complexhex:const/complex/1": {
+		"seq": "wqqa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:shader_owl": {
+		"seq": "edewawede",
+		"dir": "WEST"
+	},
+	"hexical:shader_clear": {
+		"seq": "eeeeeqaqeeeee",
+		"dir": "WEST"
+	},
+	"slate_work:set_macro": {
+		"seq": "qqqwqqqqqaqeeaqwqae",
+		"dir": "WEST"
+	},
+	"hexthings:dict_vals": {
+		"seq": "wqwaeawq",
+		"dir": "NORTH_WEST"
+	},
+	"hexdebug:breakpoint/after": {
+		"seq": "wqqaewd",
+		"dir": "EAST"
+	},
+	"hexal:mote/storage/bind": {
+		"seq": "qaqwqaqwqaq",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:idea_get": {
+		"seq": "qwwwdwewdwwwqwqwwwdwewdwwwqqqwe",
+		"dir": "EAST"
+	},
+	"slate_work:exchange_mind": {
+		"seq": "eaqwqaeqawawaddwwdqeeqdwwd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:fluid_surface_raycast": {
+		"seq": "weedewqaq",
+		"dir": "EAST"
+	},
+	"hexcasting:div": {
+		"seq": "wdedw",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:write/local": {
+		"seq": "eqqwawqaaw",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:get_enchantments": {
+		"seq": "waqeaeqawqwawaw",
+		"dir": "WEST"
+	},
+	"hexcasting:add": {
+		"seq": "waaw",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:locate": {
+		"seq": "edeeeeeqdwdwww",
+		"dir": "EAST"
+	},
+	"miehex:new_idea": {
+		"seq": "qwqwqwqwqwq",
+		"dir": "EAST"
+	},
+	"yaha:paper_plane": {
+		"seq": "wwqaqwwdw",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:chunkloader_permanent": {
+		"seq": "qaqeqwedqedwwwdewdwq",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_mainhand": {
+		"seq": "qaqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:query_blockstate": {
+		"seq": "qaqqqqqeawa",
+		"dir": "EAST"
+	},
+	"hexcasting:xor": {
+		"seq": "dwa",
+		"dir": "NORTH_WEST"
+	},
+	"caduceus:read/mark/iota": {
+		"seq": "adaaddad",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/readable": {
+		"seq": "wqaeaqwdeaaeae",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:wristpocket_item": {
+		"seq": "aaqqada",
+		"dir": "WEST"
+	},
+	"hexpose:entity_name": {
+		"seq": "edeweedw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:current_tick": {
+		"seq": "ddwaa",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:read_necklace": {
+		"seq": "waaqqqqqe",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:get_entity/item": {
+		"seq": "qqqqqdaqaaww",
+		"dir": "SOUTH_EAST"
+	},
+	"complexhex:real": {
+		"seq": "deew",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:read_book": {
+		"seq": "awqqwaqd",
+		"dir": "WEST"
+	},
+	"hexpose:item_variant": {
+		"seq": "dwaawaqwa",
+		"dir": "WEST"
+	},
+	"hexical:read_charmed_proxy": {
+		"seq": "qaqwedeeaqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:thanatos": {
+		"seq": "qqaed",
+		"dir": "SOUTH_EAST"
+	},
+	"scryglass:remove_vision": {
+		"seq": "awawa",
+		"dir": "WEST"
+	},
+	"hexical:set_lesser_sentinels": {
+		"seq": "aeaae",
+		"dir": "EAST"
+	},
+	"complexhex:const/quaternion/1": {
+		"seq": "waqqqqqea",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:get_spawn": {
+		"seq": "wqaqwawqwwawwqwwa",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:over": {
+		"seq": "aaedd",
+		"dir": "EAST"
+	},
+	"ephemera:getstatuscategory": {
+		"seq": "eeeeeqawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:explode/fire": {
+		"seq": "ddwddwdd",
+		"dir": "EAST"
+	},
+	"hexcasting:potion/slowness": {
+		"seq": "qqqqqadwawaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:bool_coerce": {
+		"seq": "aw",
+		"dir": "NORTH_EAST"
+	},
+	"hexdim:dim/perm/remove": {
+		"seq": "dewedaewdwewd",
+		"dir": "EAST"
+	},
+	"hexal:link/comm/send": {
+		"seq": "qqqqqwdeddw",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:painting_variant": {
+		"seq": "wawwwqwwawwwqadaqeda",
+		"dir": "SOUTH_WEST"
+	},
+	"pregxxy:nurture": {
+		"seq": "deaqwaw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:potion/wither": {
+		"seq": "qqqqqaewawawe",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:light": {
+		"seq": "aeaeaeaeaeawqqqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"lapisworks:falldmgres": {
+		"seq": "qqwwqqqadwewdeq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:get_entity/animal": {
+		"seq": "qqqqqdaqaawa",
+		"dir": "SOUTH_EAST"
+	},
+	"oneironaut:infusemedia": {
+		"seq": "wwaqqqqqeqqqwwwqqeqqwwwqqweqadadadaqeqeqadadadaqe",
+		"dir": "EAST"
+	},
+	"autumnfloods:has_tag": {
+		"seq": "dwedewd",
+		"dir": "EAST"
+	},
+	"ephemera:thothyoink": {
+		"seq": "qaeaqdadad",
+		"dir": "NORTH_WEST"
+	},
+	"hexical:item_name": {
+		"seq": "qwawqwaadwa",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:ride": {
+		"seq": "qaeeaq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:rotate_specklike": {
+		"seq": "adeaw",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:dephiangle": {
+		"seq": "wwqaqwwdwawwedeww",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:link/comm/read": {
+		"seq": "weeeeew",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:wish": {
+		"seq": "eweweweweweewedeaqqqd",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:replace": {
+		"seq": "wqaeaqw",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:echo": {
+		"seq": "deaqqeawqwqwqwqwq",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:memory": {
+		"seq": "qaqwqwqaqwqwqaqwqwqaqwqwqaqwqwqaqwq",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:altadd": {
+		"seq": "waawawaeawwaea",
+		"dir": "EAST"
+	},
+	"ephemera:networkindex": {
+		"seq": "eqqqqqaweqaeaqa",
+		"dir": "EAST"
+	},
+	"ephemera:getstatusduration": {
+		"seq": "qqqqqedwdwd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:const/vec/0": {
+		"seq": "qqqqq",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:grid": {
+		"seq": "eeedeee",
+		"dir": "NORTH_EAST"
+	},
+	"hexboard:load": {
+		"seq": "wqawqwewdewea",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:craft/battery": {
+		"seq": "aqqqaqwwaqqqqqeqaqqqawwqwqwqwqwqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:add_motion": {
+		"seq": "awqqqwaqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:env_packaged_hex": {
+		"seq": "waaqwwaqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"complexhex:imaginary": {
+		"seq": "eew",
+		"dir": "WEST"
+	},
+	"slate_work:store_item": {
+		"seq": "eaqwqaeqwaeaeqqeaeaw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:grok_pull": {
+		"seq": "aqawwqaw",
+		"dir": "EAST"
+	},
+	"autumnfloods:simulation": {
+		"seq": "ddwedewdd",
+		"dir": "WEST"
+	},
+	"hexoverpowered:get_personal_media_max": {
+		"seq": "qqaqqqd",
+		"dir": "EAST"
+	},
+	"ioticblocks:read/index": {
+		"seq": "aqqqqqedwewewewdw",
+		"dir": "EAST"
+	},
+	"hexical:write_shelf": {
+		"seq": "edeeedad",
+		"dir": "SOUTH_WEST"
+	},
+	"lapisworks:conjure_color": {
+		"seq": "qqaa",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:shader_media": {
+		"seq": "eewdweqaqewdwee",
+		"dir": "WEST"
+	},
+	"hexcasting:read": {
+		"seq": "aqqqqq",
+		"dir": "EAST"
+	},
+	"hexal:mote/trade": {
+		"seq": "awdedwaeqded",
+		"dir": "NORTH_WEST"
+	},
+	"miehex:allay_stop": {
+		"seq": "qaqqaeadeada",
+		"dir": "EAST"
+	},
+	"hexpose:get_effects_entity": {
+		"seq": "wqqq",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:getproperties": {
+		"seq": "qaqqqqqwwdwewdw",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/enlightened/hex/write": {
+		"seq": "wqaeaqwqqqwqwqqwwqqeaeqqeqqeaeqqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:const/true": {
+		"seq": "aqae",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:flight/range": {
+		"seq": "awawaawq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:pet_owner": {
+		"seq": "qdaqwawqeewde",
+		"dir": "WEST"
+	},
+	"hexcasting:zone_entity/not_animal": {
+		"seq": "eeeeewaqaawa",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:smelt": {
+		"seq": "wqqqwqqadad",
+		"dir": "EAST"
+	},
+	"hexal:wisp/owner": {
+		"seq": "dwqqwdedwqqwddwww",
+		"dir": "SOUTH_WEST"
+	},
+	"oneironaut:signitem": {
+		"seq": "qqaqwedeea",
+		"dir": "EAST"
+	},
+	"hexpose:entity_passengers": {
+		"seq": "qeeqawqwqw",
+		"dir": "EAST"
+	},
+	"hexpose:book_sources": {
+		"seq": "eaedweew",
+		"dir": "EAST"
+	},
+	"hexal:wisp/move/target/get": {
+		"seq": "ewdwewdew",
+		"dir": "EAST"
+	},
+	"hexcasting:zone_entity/not_living": {
+		"seq": "eeeeewaqaawd",
+		"dir": "NORTH_EAST"
+	},
+	"slate_work:read_broadcast": {
+		"seq": "aqwqaweeeeewwaaw",
+		"dir": "WEST"
+	},
+	"scryglass:rotate_vision": {
+		"seq": "aaqdwdwdedd",
+		"dir": "NORTH_EAST"
+	},
+	"hexflow:for_range/cube/pure": {
+		"seq": "dadadadqqaqqqqq",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:change_biome": {
+		"seq": "wedweaqqwq",
+		"dir": "WEST"
+	},
+	"hexical:scroll": {
+		"seq": "qadeeee",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:conjure_light": {
+		"seq": "qqd",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:great_connect": {
+		"seq": "daaedewdweeqawa",
+		"dir": "WEST"
+	},
+	"hexcasting:const/double/e": {
+		"seq": "aaq",
+		"dir": "EAST"
+	},
+	"oneironaut:readrodram": {
+		"seq": "qeeweeewddw",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:function_halt": {
+		"seq": "aqdeeqawqwqwqwqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:potion/haste": {
+		"seq": "qaawawaeqqqdd",
+		"dir": "SOUTH_EAST"
+	},
+	"hexthings:uiua_where": {
+		"seq": "qaeaqeaa",
+		"dir": "NORTH_WEST"
+	},
+	"hexthingy:smite": {
+		"seq": "wweeewwweeeqeeeadweeead",
+		"dir": "EAST"
+	},
+	"hexcassettes:inspect": {
+		"seq": "eqeweweweweqedwqeeeee",
+		"dir": "WEST"
+	},
+	"hexcasting:const/vec/pz": {
+		"seq": "qqqqqed",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:hastenature4": {
+		"seq": "aaqawawweddedwdww",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:get_mind_hex": {
+		"seq": "ddeqaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:smelt": {
+		"seq": "qwqqadadadewewewe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:get_entity/living": {
+		"seq": "qqqqqdaqaawd",
+		"dir": "SOUTH_EAST"
+	},
+	"autumnfloods:let_read": {
+		"seq": "dwaa",
+		"dir": "EAST"
+	},
+	"autumnfloods:gravity": {
+		"seq": "weeeeewq",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:altpow": {
+		"seq": "wedewqawwawqwa",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:fisherman": {
+		"seq": "ddad",
+		"dir": "WEST"
+	},
+	"lapisworks:moar_speed": {
+		"seq": "ddqwaqeqa",
+		"dir": "WEST"
+	},
+	"oneironaut:resetrod": {
+		"seq": "deaqqwqqqw",
+		"dir": "SOUTH_EAST"
+	},
+	"hexpose:get_stack": {
+		"seq": "edeedq",
+		"dir": "WEST"
+	},
+	"ephemera:clearrevealcost": {
+		"seq": "qdeqa",
+		"dir": "EAST"
+	},
+	"hexpose:get_dimension": {
+		"seq": "qwqwqwqwqwqqaedwaqd",
+		"dir": "WEST"
+	},
+	"hexical:get_arch_lamp_position": {
+		"seq": "qaqwddedqdd",
+		"dir": "NORTH_EAST"
+	},
+	"moreiotas:matrix/zero": {
+		"seq": "awwaeawwa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:creeper_fuse": {
+		"seq": "dedwaqwede",
+		"dir": "WEST"
+	},
+	"hexical:absorb_arm": {
+		"seq": "aaqqadaqwqa",
+		"dir": "WEST"
+	},
+	"hexcasting:write/entity": {
+		"seq": "wdwewewewewew",
+		"dir": "EAST"
+	},
+	"complexhex:zone_entity/not_bit": {
+		"seq": "eewwqwqwqwqwqwweewaqaaww",
+		"dir": "NORTH_EAST"
+	},
+	"caduceus:eval/control_at": {
+		"seq": "eqaedw",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:anglebetweenscalar": {
+		"seq": "wadewqaeaqwed",
+		"dir": "EAST"
+	},
+	"hexical:modify_block_ephemeral": {
+		"seq": "deewwaawd",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:count_stack": {
+		"seq": "qaqqwqqqw",
+		"dir": "EAST"
+	},
+	"hexcasting:pow": {
+		"seq": "wedew",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:flay_artmind4": {
+		"seq": "ewewedwqwaqeqwqadqwqwqdaqeqwqwq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:arccos": {
+		"seq": "adeeeee",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:getflight/type": {
+		"seq": "dwdwdewqded",
+		"dir": "NORTH_EAST"
+	},
+	"hierophantics:make_breath_trigger": {
+		"seq": "qqqqqawweqqqqqaa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:or": {
+		"seq": "waw",
+		"dir": "SOUTH_EAST"
+	},
+	"complexhex:killbit": {
+		"seq": "wqwqwqwqwqwaqdwddwdq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:random": {
+		"seq": "eqqq",
+		"dir": "NORTH_WEST"
+	},
+	"complexhex:zone_entity/bit": {
+		"seq": "qqwwewewewewewwqqwdeddww",
+		"dir": "SOUTH_EAST"
+	},
+	"hexthings:make_range": {
+		"seq": "qqqqqeweaqa",
+		"dir": "NORTH_WEST"
+	},
+	"hexflow:build_nested": {
+		"seq": "edqdeqdwewwdwqwdwwew",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:llama_spit": {
+		"seq": "dwqaqw",
+		"dir": "EAST"
+	},
+	"hexcasting:swap": {
+		"seq": "aawdd",
+		"dir": "EAST"
+	},
+	"ephemera:getrevealcost": {
+		"seq": "qdeaaqqqqq",
+		"dir": "EAST"
+	},
+	"ephemera:invisibility": {
+		"seq": "qqqqqaewawaweqa",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:personal_media": {
+		"seq": "qdwae",
+		"dir": "EAST"
+	},
+	"miehex:inventory_control": {
+		"seq": "qwawqwadawqwa",
+		"dir": "EAST"
+	},
+	"overevaluate:soroban_push": {
+		"seq": "wdeaqq",
+		"dir": "NORTH_EAST"
+	},
+	"caduceus:eval/control": {
+		"seq": "waqdeq",
+		"dir": "WEST"
+	},
+	"lapisworks:longbreath": {
+		"seq": "wewdwewewewewdwew",
+		"dir": "SOUTH_EAST"
+	},
+	"hexweb:get_port": {
+		"seq": "eqewdewqewdd",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:entity_pos/eye": {
+		"seq": "aa",
+		"dir": "EAST"
+	},
+	"hexcasting:sentinel/create/great": {
+		"seq": "waeawaeqqqwqwqqwq",
+		"dir": "EAST"
+	},
+	"lessertp:simpler_tp": {
+		"seq": "qqqqqwqqwqqeqqwqqqw",
+		"dir": "NORTH_WEST"
+	},
+	"hexoverpowered:mind_env/running_code": {
+		"seq": "wqaqwweeeeeqdeaqq",
+		"dir": "SOUTH_WEST"
+	},
+	"autumnfloods:arrow": {
+		"seq": "awwwqaqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexecuteif:inv_occupied_slots": {
+		"seq": "dwewdwed",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:am_enlightened": {
+		"seq": "awqaqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexstruction:transformations": {
+		"seq": "aeqeawaeqeaaee",
+		"dir": "EAST"
+	},
+	"hexpose:classify": {
+		"seq": "edqdeq",
+		"dir": "WEST"
+	},
+	"hexcasting:tan": {
+		"seq": "wqqqqqadq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexical:get_telepathy": {
+		"seq": "wqqadaw",
+		"dir": "EAST"
+	},
+	"complexhex:qx": {
+		"seq": "wdeeeeeqq",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:zone_entity/by_name": {
+		"seq": "qqqqqwdeddwwded",
+		"dir": "SOUTH_EAST"
+	},
+	"hex_machina:next_bullet": {
+		"seq": "eeewaa",
+		"dir": "EAST"
+	},
+	"hexical:get_arch_lamp_media": {
+		"seq": "qaqwddedaeeeee",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:left_click": {
+		"seq": "qadee",
+		"dir": "NORTH_EAST"
+	},
+	"ephemera:getflight/remaining": {
+		"seq": "dwdwdewqdedd",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/consume": {
+		"seq": "wawqwawwwewwwewwwawqwawwwewwwewdeaweewaqaweewaawwww",
+		"dir": "NORTH_WEST"
+	},
+	"lapisworks:equiv_block": {
+		"seq": "qqqqqeqeeeee",
+		"dir": "NORTH_WEST"
+	},
+	"hierophantics:invert_trigger": {
+		"seq": "aawddeeqqqqqaw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:draw_pattern": {
+		"seq": "eadqqqa",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:env_staff": {
+		"seq": "waaq",
+		"dir": "NORTH_EAST"
+	},
+	"overevaluate:apep": {
+		"seq": "dqd",
+		"dir": "EAST"
+	},
+	"moreiotas:string/chat/prefix/get": {
+		"seq": "ewded",
+		"dir": "NORTH_EAST"
+	},
+	"miehex:idealized_block": {
+		"seq": "wqwawqwqwqwqwqawew",
+		"dir": "EAST"
+	},
+	"oneironaut:erosionshield": {
+		"seq": "wwqwwqwwqwwqwwqwwaeqwwqqqwwqaeadaqadaawww",
+		"dir": "WEST"
+	},
+	"moreiotas:item/inventory/stacks": {
+		"seq": "aqwed",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_message": {
+		"seq": "aeeedw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:get_effect_duration": {
+		"seq": "wqqqaqwdd",
+		"dir": "SOUTH_WEST"
+	},
+	"hexstruction:rotate_clockwise_z": {
+		"seq": "aeqeawaeqeaeed",
+		"dir": "EAST"
+	},
+	"hexcasting:sentinel/destroy": {
+		"seq": "qdwdqdw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:normalize_scroll": {
+		"seq": "wqwawqwqawawa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:equals": {
+		"seq": "ad",
+		"dir": "EAST"
+	},
+	"lapisworks:flay_artmind2": {
+		"seq": "ewewedwqwqqwqwqaeqeqaqeqeqa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexcasting:index": {
+		"seq": "deeed",
+		"dir": "NORTH_WEST"
+	},
+	"hexcasting:get_entity_velocity": {
+		"seq": "wq",
+		"dir": "EAST"
+	},
+	"hexal:wisp/media": {
+		"seq": "aqaweewaqaweedw",
+		"dir": "NORTH_WEST"
+	},
+	"complexhex:const/quaternion/j": {
+		"seq": "waqqqqqee",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:all_in_one_pages": {
+		"seq": "deeeeweewee",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:flay_artmind0": {
+		"seq": "ewewedwqwqqwqwqaeqe",
+		"dir": "SOUTH_EAST"
+	},
+	"miehex:camera": {
+		"seq": "eewqqwqqwwwqqeqqwwwqqwqqwee",
+		"dir": "NORTH_EAST"
+	},
+	"lapisworks:create_enchsent1": {
+		"seq": "aqaeawdwwwdwqwdwwwdwewweaqa",
+		"dir": "NORTH_WEST"
+	},
+	"hexecuteif:eval_if": {
+		"seq": "deaqqq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:reset_mage_block": {
+		"seq": "deeeaw",
+		"dir": "NORTH_WEST"
+	},
+	"autumnfloods:id_read": {
+		"seq": "edqqaq",
+		"dir": "EAST"
+	},
+	"autumnfloods:id_write": {
+		"seq": "qaeede",
+		"dir": "WEST"
+	},
+	"miehex:anglebetweenvectors": {
+		"seq": "qaeaqeqaea",
+		"dir": "NORTH_WEST"
+	},
+	"hexstruction:load_structure": {
+		"seq": "aeqeawaeqea",
+		"dir": "EAST"
+	},
+	"hexdebug:splicing/clipboard/spellbook_index/read": {
+		"seq": "wqaeaqwdeaaea",
+		"dir": "NORTH_WEST"
+	},
+	"hexcassettes:busy": {
+		"seq": "qeqwqwqwqwqeqaweqqqqqaww",
+		"dir": "EAST"
+	},
+	"hexportation:make_conduit": {
+		"seq": "eadewewedaedwqeadewewedaedww",
+		"dir": "NORTH_EAST"
+	},
+	"hexal:wisp/seon/set": {
+		"seq": "aqweewqaeaqweewqaqwww",
+		"dir": "SOUTH_WEST"
+	},
+	"hexpose:is_wet": {
+		"seq": "qqqqwaadq",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:link/comm/open_transmit": {
+		"seq": "qwdedwq",
+		"dir": "WEST"
+	},
+	"hexoverpowered:mind_stack/size": {
+		"seq": "waawweeeeewaa",
+		"dir": "SOUTH_WEST"
+	},
+	"hexdebug:const/debugging": {
+		"seq": "qqqqqewaa",
+		"dir": "EAST"
+	},
+	"miehex:cube_type": {
+		"seq": "wewdwewaqwqwa",
+		"dir": "WEST"
+	},
+	"miehex:resurrectionem": {
+		"seq": "wqwwawwqwawqaqwqqewwwwdeqewdaqeqqeqeqewdweqeqeqqeqadweqedwwwweqeeqwewqwwewdwew",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:cycle_variant": {
+		"seq": "dwaawedwewdwe",
+		"dir": "WEST"
+	},
+	"hexchanting:imbue_equipment": {
+		"seq": "dqaqdqaqdqaeadawadadawadadawa",
+		"dir": "WEST"
+	},
+	"ephemera:getabsorption": {
+		"seq": "wqeawaqddaqw",
+		"dir": "NORTH_EAST"
+	},
+	"hex_machina:previous_bullet": {
+		"seq": "qqqwdd",
+		"dir": "WEST"
+	},
+	"hexcasting:erase": {
+		"seq": "qdqawwaww",
+		"dir": "EAST"
+	},
+	"hexal:breath": {
+		"seq": "aqawdwaqawd",
+		"dir": "NORTH_WEST"
+	},
+	"hexweb:request": {
+		"seq": "qqqqwqdqddqe",
+		"dir": "NORTH_EAST"
+	},
+	"autumnfloods:kcit": {
+		"seq": "qwqwqwqwqwqqeaeaeaeaeaewqqqdwqqqwdqqqdwqqqwdqqqdwqqaqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeeqeeawqdwedewdwewdadqwaeqqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwaqdwedewdwewdadqawdeawewaedwew",
+		"dir": "WEST"
+	},
+	"hexportation:get_view_name": {
+		"seq": "adeeedewe",
+		"dir": "EAST"
+	},
+	"hexcasting:reverse": {
+		"seq": "qqqaede",
+		"dir": "EAST"
+	},
+	"hexical:horrible": {
+		"seq": "wedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqe",
+		"dir": "EAST"
+	},
+	"oneironaut:getdim/nether": {
+		"seq": "wqwqwqwqwqwaqaaqaw",
+		"dir": "NORTH_EAST"
+	},
+	"hexoverpowered:yjsp_media": {
+		"seq": "eaddaddaeaeaddaddaeaeaddaddae",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:edible": {
+		"seq": "adaqqqdd",
+		"dir": "WEST"
+	},
+	"hexcasting:ignite": {
+		"seq": "aaqawawa",
+		"dir": "SOUTH_EAST"
+	},
+	"hexportation:get_view_capacity": {
+		"seq": "adeeedeww",
+		"dir": "EAST"
+	},
+	"lapisworks:writable_spechand": {
+		"seq": "eeeedaww",
+		"dir": "SOUTH_WEST"
+	},
+	"hexcasting:fisherman/copy": {
+		"seq": "aada",
+		"dir": "EAST"
+	},
+	"moreiotas:string/case": {
+		"seq": "dwwdwwdwdd",
+		"dir": "WEST"
+	},
+	"pregxxy:pregxxy": {
+		"seq": "eewewwwwdwwwweweewwdeaqq",
+		"dir": "NORTH_EAST"
+	},
+	"hexcasting:and": {
+		"seq": "wdw",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:get_time": {
+		"seq": "wddwaqqwqaddaqqwddwaqqwqaddaq",
+		"dir": "SOUTH_EAST"
+	},
+	"hexecuteif:inv_slot_item_count": {
+		"seq": "dwewdweedq",
+		"dir": "NORTH_WEST"
+	},
+	"hexpose:block_hardness": {
+		"seq": "qaqqqqqeeeeedq",
+		"dir": "EAST"
+	},
+	"oneironaut:dimteleport": {
+		"seq": "qeewwwweeqeqeewwwweeqdqqdwwwdqeqdwwwdqdadwwdqdwwddadaqadaawww",
+		"dir": "NORTH_EAST"
+	},
+	"hexpose:text_strikethrough": {
+		"seq": "awaqeeeeedq",
+		"dir": "SOUTH_WEST"
+	},
+	"miehex:destroy_components": {
+		"seq": "aaqqddaqddaqddaqddaqddadw",
+		"dir": "EAST"
+	},
+	"hexcasting:create_lava": {
+		"seq": "eaqawqadaqd",
+		"dir": "EAST"
+	},
+	"hexcasting:akashic/write": {
+		"seq": "eeeweeeeede",
+		"dir": "EAST"
+	},
+	"complexhex:qy": {
+		"seq": "wdeeeeeqe",
+		"dir": "SOUTH_EAST"
+	},
+	"hexical:take_on_pigment": {
+		"seq": "weeeweeqeeeewqaqweeee",
+		"dir": "EAST"
+	},
+	"hexpose:block_map_color": {
+		"seq": "qwedewqqqqq",
+		"dir": "EAST"
+	},
+	"hexical:thickness_specklike": {
+		"seq": "adeeqw",
+		"dir": "SOUTH_WEST"
+	},
+	"hexal:falling_block": {
+		"seq": "wqwawqwqwqwqwqw",
+		"dir": "EAST"
+	},
+	"hexcasting:sentinel/wayfind": {
+		"seq": "waeawaedwa",
+		"dir": "EAST"
+	},
+	"miehex:import_quine": {
+		"seq": "qqqqqeawqwqwqwqwqwwded",
+		"dir": "EAST"
+	},
+	"hexcasting:write": {
+		"seq": "deeeee",
+		"dir": "EAST"
+	},
+	"hexcasting:abs": {
+		"seq": "wqaqw",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:clear_shelf": {
+		"seq": "edeedade",
+		"dir": "SOUTH_WEST"
+	},
+	"moreiotas:string/empty": {
+		"seq": "awdwa",
+		"dir": "SOUTH_EAST"
+	},
+	"moreiotas:string/newline": {
+		"seq": "waawaw",
+		"dir": "EAST"
+	},
+	"slate_work:get_craft_count": {
+		"seq": "eaqwqaeqwaeadawwadaeawdaa",
+		"dir": "SOUTH_WEST"
+	},
+	"ephemera:gaussianrand": {
+		"seq": "eeeeq",
+		"dir": "NORTH_EAST"
+	},
+	"overevaluate:maat": {
+		"seq": "qed",
+		"dir": "NORTH_EAST"
+	},
+	"caduceus:eval/prompt_at": {
+		"seq": "qedqaw",
+		"dir": "NORTH_WEST"
+	},
+	"pregxxy:greater_pregxxy": {
+		"seq": "wewewewwwwwewewwwwwewewewqadewwdwweweaqwwaeeawww",
+		"dir": "NORTH_EAST"
+	},
+	"hexical:ghast_fireball": {
+		"seq": "wqqqqqwaeaeaeaeae",
+		"dir": "SOUTH_EAST"
+	}
+}

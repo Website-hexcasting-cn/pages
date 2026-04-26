@@ -4,6 +4,10 @@
 }
 
 async function LoadMenuList() {
+    // 加载hexcastingLogo点击跳转事件
+    document.getElementById('HexcastingLogo').addEventListener('click', () => {
+        window.location.href = 'https://github.com/FallingColors/HexMod';
+    });
     // 获取菜单列表
     const MenuList = await fetch('/Resource/MenuList.json').then(response => response.json());
     // 获取当前页面路径
