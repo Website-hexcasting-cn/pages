@@ -1,4 +1,4 @@
-function StartFunctionList() {
+{function StartFunctionList() {
     // 工具列表
     const ToolList = document.getElementById("ToolList");
     // 初始化工具列表文字
@@ -16,4 +16,4 @@ function StartFunctionList() {
         }
     });
 }
-StartFunctionList();
+StartFunctionList();}

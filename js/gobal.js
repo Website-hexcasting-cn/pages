@@ -2,14 +2,13 @@
     // 加载菜单列表
     LoadMenuList();
 }
-
 async function LoadMenuList() {
     // 加载hexcastingLogo点击跳转事件
     document.getElementById('HexcastingLogo').addEventListener('click', () => {
-        window.location.href = 'https://github.com/FallingColors/HexMod';
+        window.location.href = GetGlobalConstant('GithubHexcasting');
     });
     // 获取菜单列表
-    const MenuList = await fetch('/Resource/MenuList.json').then(response => response.json());
+    const MenuList = await fetch(GetGlobalConstant('MenuList')).then(response => response.json());
     // 获取当前页面路径
     const currentPage = window.location.pathname;
     // 获取html页面菜单无序列表
@@ -27,7 +26,7 @@ async function LoadMenuList() {
         // 设置li元素触发器
         li.addEventListener('click', () => {
             // 切换到新页面
-            window.location.href = item.Link;
+            window.location.href = GetGlobalConstant(item.Link);
         });
         // 判断当前页面是否为菜单链接或首页或工具页面
         if (!CompareURL(currentPage, item.Link)) {
@@ -45,4 +44,22 @@ function CompareURL(url1, url2) {
     url1 = url1.replace(/\.html$/, '');
     url2 = url2.replace(/\.html$/, '');
     return url1 == url2;
+}
+function GetGlobalConstant(ConstantName){
+    switch (ConstantName) {
+        case 'HexcastingLogo':
+            return '/Resource/Img/HexcastingLogo.png';
+        case 'LogoBackgroundImage':
+            return '/Resource/Img/LogoBackgroundImage.webp';
+        case 'RandomIntroduction':
+            return '/Resource/Config/RandomIntroduction.json';
+        case 'MenuList':
+            return '/Resource/Config/MenuList.json';
+        case 'ToolList':
+            return '/Resource/Config/ToolList.json';
+        case 'GithubHexcasting':
+            return 'https://github.com/FallingColors/HexMod';
+        default:
+            return null;
+    }
 }
