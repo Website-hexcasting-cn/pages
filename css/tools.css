@@ -1,45 +1,41 @@
-#ToolContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    margin-top: 40px;
+/* 卡片容器 - 使用 Flexbox 布局 */
+#ToolList {
+    display: flex;              /* 启用 Flexbox 布局，使子元素成为弹性项目 */
+    flex-wrap: wrap;            /* 允许子元素换行，当一行放不下时自动折行到下一行 */
+    gap: 20px;                  /* 设置卡片之间的间距（水平 20px，垂直 20px） */
+    padding: 20px;              /* 容器内边距，防止卡片紧贴容器边缘 */
+    justify-content: center;    /* 水平居中对齐卡片，使最后一行卡片也居中显示 */
+    align-items: stretch;       /* 拉伸所有卡片使其高度一致，以最高的卡片为准 */
 }
-#ToolList[IsToolListText="true"] {
-    display: flex;
-    flex-direction: column;
-    width: 110px;
-    border: 2px solid #ffffff5b;
-    border-radius: 8px;
+
+/* 单个卡片样式 */
+#ToolList .card {
+    flex: 1 1 calc(33.333% - 20px);  /* 弹性增长、弹性收缩、基础宽度（每行 3 个卡片，减去间距） */
+    min-width: 280px;                 /* 最小宽度，防止卡片在小屏幕上过窄 */
+    max-width: 400px;                 /* 最大宽度，防止卡片在大屏幕上过宽 */
+    padding: 20px;                    /* 卡片内边距，内容与卡片边缘的距离 */
+    background: #ffffff;              /* 卡片背景色为白色 */
+    border-radius: 8px;               /* 圆角边框，8px 的圆角使卡片更柔和 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* 轻微阴影效果，增强卡片的立体感 */
+    transition: transform 0.3s, box-shadow 0.3s;  /* 添加过渡动画，鼠标悬停时平滑变化 */
 }
-#ToolList[IsToolListText="false"] {
-    display: flex;
-    flex-direction: column;
-    width: 25px;
-    border: 2px solid #ffffff5b;
-    border-radius: 8px;
+
+/* 卡片鼠标悬停效果 */
+#ToolList .card:hover {
+    transform: translateY(-5px);           /* 鼠标悬停时卡片向上移动 5px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* 悬停时阴影加深，营造浮起效果 */
 }
-#ToolList ul {
-    list-style: none;
-    margin: 0 auto;
-    padding-inline-start: 0px;
-    transform: translate(0px, 0px);
+
+/* 响应式设计 - 平板设备 */
+@media (max-width: 768px) {
+    #ToolList .card {
+        flex: 1 1 calc(50% - 20px);   /* 平板屏幕每行显示 2 个卡片 */
+    }
 }
-#ToolList ul li img {
-    display: inline;
-    margin: 0 auto;
-    height: 20px;
-    width: 20px;
-    transform: translate(0, 3px);
-}
-#ToolList[IsToolListText="true"] ul li p {
-    display: inline;
-}
-#ToolList[IsToolListText="false"] ul li p {
-    display: none;
-}
-#ToolContent {
-    display: flex;
-    background-color: antiquewhite;
-    width: 100%;
-    height: 100%;
+
+/* 响应式设计 - 手机设备 */
+@media (max-width: 480px) {
+    #ToolList .card {
+        flex: 1 1 100%;               /* 手机屏幕每行显示 1 个卡片，占满整行 */
+    }
 }

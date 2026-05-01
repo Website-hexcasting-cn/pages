@@ -4,6 +4,6 @@
         "Description": "生成相对向量列表",
         "Id": "VectorGenerator",
         "Icon": "/Resource/HexcastingLogo.png",
-        "Url": "/OtherPage/VectorGenerator.html"
+        "Url": ""
     }
 ]

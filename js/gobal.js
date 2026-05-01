@@ -3,8 +3,11 @@
     LoadMenuList();
 }
 async function LoadMenuList() {
+    // 修改hexcastingLogo图片
+    document.getElementById('HexcastingLogo').src = GetGlobalConstant('HexcastingLogo');
     // 加载hexcastingLogo点击跳转事件
     document.getElementById('HexcastingLogo').addEventListener('click', () => {
+        // 点击hexcastingLogo跳转github仓库
         window.location.href = GetGlobalConstant('GithubHexcasting');
     });
     // 获取菜单列表
