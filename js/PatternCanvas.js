@@ -1,7 +1,7 @@
 //Main Function
 function PatternCanvas() {
     //初始化点阵数据
-    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4};
+    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1};
     //初始化变量
     globalThis.PatternCanvasVirtual = CreateVirtualPatternCanvas();
     globalThis.PatternCanvas.Messages = [];
@@ -12,7 +12,7 @@ function PatternCanvas() {
     resizeCanvas();
     RefreshPatternCanvas(globalThis.PatternCanvasVirtual,globalThis.PatternData);
     //每50ms刷新一次点阵
-    setInterval(PatternCanvasClaw,50);
+    setInterval(PatternCanvasClaw,10);
 }
 //设置画布尺寸
 function resizeCanvas() {
@@ -21,7 +21,7 @@ function resizeCanvas() {
     PatternCanvas.height = window.innerHeight;
 }
 //刷新点阵
-function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
+function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData,HighlightPoint=globalThis.PatternCanvas.HighlightPoint) {
     //定义变量
     let PatternCanvas = document.getElementById("PatternCanvas");
     let PatternCanvasCtx = PatternCanvas.getContext("2d");
@@ -82,6 +82,61 @@ function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtu
             PatternCanvasCtx.closePath();
         }
     }
+    //绘制当前绘画过程中的图案预览
+    let Path = globalThis.PatternCanvas.Path;
+    if (globalThis.PatternCanvas.DrawingStatus && Path.length > 0) {
+        for (let i = 1; i < Path.length; i++) {
+            let FirstPoint = Path[i - 1];
+            let SecondPoint = Path[i];
+            let OffsetX1 = (FirstPoint.y % 2 === 0) ? 0 : PatternData.Spacing / 2;
+            let RealX1 = FirstPoint.x * PatternData.Spacing + OffsetX1 + PatternCanvasVirtual.X;
+            let RealY1 = FirstPoint.y * PatternData.Spacing + PatternCanvasVirtual.Y;
+            let OffsetX2 = (SecondPoint.y % 2 === 0) ? 0 : PatternData.Spacing / 2;
+            let RealX2 = SecondPoint.x * PatternData.Spacing + OffsetX2 + PatternCanvasVirtual.X;
+            let RealY2 = SecondPoint.y * PatternData.Spacing + PatternCanvasVirtual.Y;
+            PatternCanvasCtx.beginPath();
+            PatternCanvasCtx.moveTo(RealX1, RealY1);
+            PatternCanvasCtx.lineTo(RealX2, RealY2);
+            PatternCanvasCtx.strokeStyle = PatternData.PatternLineColor;
+            PatternCanvasCtx.lineWidth = PatternData.PatternLineWidth;
+            PatternCanvasCtx.stroke();
+            PatternCanvasCtx.closePath();
+        }
+        //连接已记录路径的最后一个点到高亮点
+        if (HighlightPoint) {
+            let LastPoint = Path[Path.length - 1];
+            let LastOffsetX = (LastPoint.y % 2 === 0) ? 0 : PatternData.Spacing / 2;
+            let LastRealX = LastPoint.x * PatternData.Spacing + LastOffsetX + PatternCanvasVirtual.X;
+            let LastRealY = LastPoint.y * PatternData.Spacing + PatternCanvasVirtual.Y;
+            let HighlightOffsetX = (HighlightPoint.y % 2 === 0) ? 0 : PatternData.Spacing / 2;
+            let HighlightRealX = HighlightPoint.x * PatternData.Spacing + HighlightOffsetX + PatternCanvasVirtual.X;
+            let HighlightRealY = HighlightPoint.y * PatternData.Spacing + PatternCanvasVirtual.Y;
+            PatternCanvasCtx.beginPath();
+            PatternCanvasCtx.moveTo(LastRealX, LastRealY);
+            PatternCanvasCtx.lineTo(HighlightRealX, HighlightRealY);
+            PatternCanvasCtx.strokeStyle = PatternData.PatternLineColor;
+            PatternCanvasCtx.lineWidth = PatternData.PatternLineWidth;
+            PatternCanvasCtx.stroke();
+            PatternCanvasCtx.closePath();
+        }
+    }
+    //放大碰到的点
+    if (HighlightPoint) {
+        let OffsetX = (HighlightPoint.y % 2 === 0) ? 0 : PatternData.Spacing / 2;
+        let PointX = HighlightPoint.x * PatternData.Spacing + OffsetX + PatternCanvasVirtual.X;
+        let PointY = HighlightPoint.y * PatternData.Spacing + PatternCanvasVirtual.Y;
+        let Gradient = PatternCanvasCtx.createRadialGradient(
+            PointX, PointY, 0,
+            PointX, PointY, PatternData.Size * 0.1
+        );
+        Gradient.addColorStop(0, PatternData.PointWithinColor);
+        Gradient.addColorStop(1, PatternData.PointOutsideColor);
+        PatternCanvasCtx.beginPath();
+        PatternCanvasCtx.arc(PointX, PointY, PatternData.Size * PatternData.SelectPointSize, 0, Math.PI * 2);
+        PatternCanvasCtx.fillStyle = Gradient;
+        PatternCanvasCtx.fill();
+        PatternCanvasCtx.closePath();
+    }
 }
 //创建虚拟点阵对象
 function CreateVirtualPatternCanvas(StartingX=0,StartingY=0) {
@@ -100,7 +155,7 @@ function ScreenSizeChanges(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,
     RefreshPatternCanvas(PatternCanvasVirtual,PatternData);
 }
 //鼠标滚轮事件
-function MouseScrollWheel(e,PatternCanvasVirtual,PatternData) {
+function MouseScrollWheel(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     e.preventDefault();
     //根据滚动方向操作x,y
     //如果滚动方向是y轴，x轴不移动
@@ -110,7 +165,7 @@ function MouseScrollWheel(e,PatternCanvasVirtual,PatternData) {
     RefreshPatternCanvas(PatternCanvasVirtual,PatternData);
 }
 //检测鼠标是否碰到点
-function IsMouseOverPoint(e,PatternCanvasVirtual,PatternData) {
+function IsMouseOverPoint(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let PatternCanvas = document.getElementById("PatternCanvas");
     let ClickX = e.clientX - PatternCanvas.offsetLeft;
     let ClickY = e.clientY - PatternCanvas.offsetTop;
@@ -130,15 +185,21 @@ function IsMouseOverPoint(e,PatternCanvasVirtual,PatternData) {
     }
 }   
 //鼠标移动处理函数
-function HandleMouseMove(e,PatternCanvasVirtual,PatternData) {
+function HandleMouseMove(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let MouseMovePoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
     if (MouseMovePoint !== undefined) {
         //记录鼠标移动点的虚拟点阵坐标
         globalThis.PatternCanvas.Messages.push({Type:"PatternCanvasMouseMove",x:MouseMovePoint.x,y:MouseMovePoint.y});
+        //更新高亮点并触发重绘
+        globalThis.PatternCanvas.HighlightPoint = MouseMovePoint;
+        RefreshPatternCanvas();
+    } else {
+        globalThis.PatternCanvas.HighlightPoint = undefined;
+        RefreshPatternCanvas();
     }
 }
 //点击事件
-function CanvasClickClick(e,PatternCanvasVirtual,PatternData) {
+function CanvasClickClick(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let ClickPoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
     if (ClickPoint !== undefined) {
         //记录点击点的虚拟点阵坐标
@@ -146,7 +207,7 @@ function CanvasClickClick(e,PatternCanvasVirtual,PatternData) {
     }
 }
 //触发器注册
-function TriggerRegistration(PatternCanvasVirtual,PatternData) {
+function TriggerRegistration(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     //初始化变量
     let PatternCanvas = document.getElementById("PatternCanvas");
     //初始化复制按钮
@@ -209,6 +270,7 @@ function PatternCanvasClaw() {
         return;
     }
     
+    //遍历消息列表处理消息
     let Message = globalThis.PatternCanvas.Messages.shift();
     MessageProcessing(Message);
 }
