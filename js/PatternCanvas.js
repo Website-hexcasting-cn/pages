@@ -235,10 +235,21 @@ function TriggerRegistration(PatternCanvasVirtual=globalThis.PatternCanvasVirtua
 }
 //处理PatternCanvasMouseMove消息
 function PatternCanvasMouseMoveHandler(Message){
-    let last = globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-1];
-    if (globalThis.PatternCanvas.DrawingStatus && !(last && last.x === Message.x && last.y === Message.y)) {
+    let Last = globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-1];
+    if (globalThis.PatternCanvas.DrawingStatus && !(Last && Last.x === Message.x && Last.y === Message.y)) {
         //如果正在绘制，记录鼠标移动点的虚拟点阵坐标
         globalThis.PatternCanvas.Path.push({x:Message.x,y:Message.y});
+    }
+    //添加勿选点后悔机制
+    let ThirdLast = globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-3];
+    if (globalThis.PatternCanvas.DrawingStatus && 
+        globalThis.PatternCanvas.Path.length > 2 &&
+        ThirdLast && Last &&
+        ThirdLast.x === Last.x && ThirdLast.y === Last.y
+    ) {
+        //如果三个点都相同，删除最后一个点
+        globalThis.PatternCanvas.Path.pop();
+        globalThis.PatternCanvas.Path.pop();
     }
 }
 //处理PatternCanvasClickPoint消息
