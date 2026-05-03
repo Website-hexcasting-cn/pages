@@ -236,7 +236,7 @@ function TriggerRegistration(PatternCanvasVirtual=globalThis.PatternCanvasVirtua
 //处理PatternCanvasMouseMove消息
 function PatternCanvasMouseMoveHandler(Message){
     let last = globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-1];
-    if (globalThis.PatternCanvas.DrawingStatus && !(last && last.Type === "PatternCanvasMouseMove" && last.x === Message.x && last.y === Message.y)) {
+    if (globalThis.PatternCanvas.DrawingStatus && !(last && last.x === Message.x && last.y === Message.y)) {
         //如果正在绘制，记录鼠标移动点的虚拟点阵坐标
         globalThis.PatternCanvas.Path.push({x:Message.x,y:Message.y});
     }
