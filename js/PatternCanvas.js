@@ -1,7 +1,7 @@
 //Main Function
 function PatternCanvas() {
     //初始化点阵数据
-    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1};
+    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1,debug:false};
     //初始化变量
     globalThis.PatternCanvasVirtual = CreateVirtualPatternCanvas();
     globalThis.PatternCanvas.Messages = [];
@@ -11,8 +11,6 @@ function PatternCanvas() {
     //设置画布尺寸并刷新点阵
     resizeCanvas();
     RefreshPatternCanvas(globalThis.PatternCanvasVirtual,globalThis.PatternData);
-    //每50ms刷新一次点阵
-    setInterval(PatternCanvasClaw,10);
 }
 //设置画布尺寸
 function resizeCanvas() {
@@ -56,6 +54,12 @@ function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtu
             PatternCanvasCtx.fillStyle = Gradient;
             PatternCanvasCtx.fill();
             PatternCanvasCtx.closePath();
+            //debug模式下标注虚拟坐标
+            if (PatternData.debug) {
+                PatternCanvasCtx.fillStyle = "#ff0000";
+                PatternCanvasCtx.font = "12px Arial";
+                PatternCanvasCtx.fillText(i + "," + j, PointX + 5, PointY - 5);
+            }
         }
     }
     //绘制图案
@@ -183,7 +187,107 @@ function IsMouseOverPoint(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual
         //记录点击点的虚拟点阵坐标
         return {x:CanvasClickXInVirtual,y:CanvasClickYInVirtual};
     }
-}   
+}
+//根据图案虚拟点阵坐标实现图案列表转换图案列表字符串
+function PatternCanvasVirtualToPatternList(PatternCanvasVirtual=globalThis.PatternCanvasVirtual){
+    if (PatternCanvasVirtual.Patterns.length === 0) {
+        return [];
+    }
+    //预处理
+    let PatternList = PatternCanvasVirtualToPatternListPreprocessPatternList(PatternCanvasVirtual.Patterns);
+    let PatternStringList = [];
+    for (let i = 0; i < PatternList.length; i++) {
+        const Pattern = PatternList[i];
+        if (Pattern.StrokeOrder.length === 0) {
+            continue;
+        }
+        let PatternString = "";
+        //遍历笔顺中的每一段，计算相对方向编码
+        let PreviousDirectionIndex = 0;
+        for (let j = 1; j < Pattern.StrokeOrder.length; j++) {
+            let PreviousPoint = Pattern.StrokeOrder[j - 1];
+            let CurrentPoint = Pattern.StrokeOrder[j];
+            let Result = CalculateRelativeDirectionCode(PreviousPoint, CurrentPoint, PreviousDirectionIndex);
+            PatternString += Result.DirectionCode;
+            PreviousDirectionIndex = Result.CurrentDirectionIndex;
+        }
+        //图案字符串默认第一个是w，去掉第一个w
+        PatternString = PatternString.slice(1);
+        PatternStringList.push([Pattern.StartingPointX, Pattern.StartingPointY, PatternString]);
+    }
+    return PatternStringList;
+}
+//计算两点之间的相对方向编码
+function CalculateRelativeDirectionCode(FromPoint, ToPoint, PreviousDirectionIndex) {
+    let DeltaX = ToPoint.x - FromPoint.x;
+    let DeltaY = ToPoint.y - FromPoint.y;
+    if (Math.abs(DeltaX) < 0.001 && Math.abs(DeltaY) < 0.001) {
+        return { DirectionCode: "", CurrentDirectionIndex: PreviousDirectionIndex };
+    }
+    //计算当前绝对方向索引 (0-5)
+    let Angle = Math.atan2(-DeltaY, DeltaX);
+    let CurrentDirectionIndex = Math.round(Angle / (Math.PI / 3));
+    while (CurrentDirectionIndex < 0) {
+        CurrentDirectionIndex += 6;
+    }
+    CurrentDirectionIndex = CurrentDirectionIndex % 6;
+    //计算相对转向 (当前方向 - 上一方向)
+    let Turn = CurrentDirectionIndex - PreviousDirectionIndex;
+    //归一化到 -3 到 +3
+    while (Turn > 3) {
+        Turn -= 6;
+    }
+    while (Turn < -3) {
+        Turn += 6;
+    }
+    //相对方向编码映射
+    //+0(直行): d, +1(右转60°): e, +2(右转120°): x, +3(掉头): a, -1(左转60°): w, -2(左转120°): z
+    let RelativeDirectionMap = {
+        0: "w",
+        1: "q",
+        2: "a",
+        3: "s",
+        [-1]: "e",
+        [-2]: "d"
+    };
+    let DirectionCode = RelativeDirectionMap[Turn];
+    return { DirectionCode: DirectionCode, CurrentDirectionIndex: CurrentDirectionIndex };
+}
+//预处理
+function PatternCanvasVirtualToPatternListPreprocessPatternList(PatternListArray) {
+    let PreprocessedPatternList = [];
+    for (let i = 0; i < PatternListArray.length; i++) {
+        let PreprocessedStrokeOrder = [];
+        for (let j = 0; j < PatternListArray[i].StrokeOrder.length; j++) {
+            let Point = PatternListArray[i].StrokeOrder[j];
+            let PreprocessedPoint = { x: Point.x, y: Point.y };
+            if (PreprocessedPoint.y % 2 === 0) {
+                PreprocessedPoint.x -= 0.5;
+            }
+            PreprocessedStrokeOrder.push(PreprocessedPoint);
+        }
+        PreprocessedPatternList.push({
+            StrokeOrder: PreprocessedStrokeOrder,
+            StartingPointX: PreprocessedStrokeOrder[0].x,
+            StartingPointY: PreprocessedStrokeOrder[0].y
+        });
+    }
+    return PreprocessedPatternList;
+}
+//计算两边夹角(弧度制)，已知两边相交于 CommonPoint
+function CalculateAngleBetweenTwoSides(FirstPoint, CommonPoint, SecondPoint) {
+    let VectorA = { x: FirstPoint.x - CommonPoint.x, y: FirstPoint.y - CommonPoint.y };
+    let VectorB = { x: SecondPoint.x - CommonPoint.x, y: SecondPoint.y - CommonPoint.y };
+    let DotProduct = VectorA.x * VectorB.x + VectorA.y * VectorB.y;
+    let MagnitudeA = Math.sqrt(VectorA.x * VectorA.x + VectorA.y * VectorA.y);
+    let MagnitudeB = Math.sqrt(VectorB.x * VectorB.x + VectorB.y * VectorB.y);
+    if (MagnitudeA === 0 || MagnitudeB === 0) {
+        return 0;
+    }
+    let CosTheta = DotProduct / (MagnitudeA * MagnitudeB);
+    CosTheta = Math.max(-1, Math.min(1, CosTheta));
+    return Math.acos(CosTheta);
+}
 //鼠标移动处理函数
 function HandleMouseMove(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let MouseMovePoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
@@ -205,33 +309,6 @@ function CanvasClickClick(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual
         //记录点击点的虚拟点阵坐标
         globalThis.PatternCanvas.Messages.push({Type:"PatternCanvasClickPoint",x:ClickPoint.x,y:ClickPoint.y});
     }
-}
-//触发器注册
-function TriggerRegistration(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
-    //初始化变量
-    let PatternCanvas = document.getElementById("PatternCanvas");
-    //初始化复制按钮
-    const PatternBottomContainer = document.getElementById("PatternBottomContainer");
-    PatternBottomContainer.addEventListener("click", function () {
-        //复制笔顺
-    });
-    //窗口大小变化时重新设置尺寸并刷新点阵
-    window.addEventListener('resize', function(e) {
-        ScreenSizeChanges(PatternCanvasVirtual,PatternData);
-    });
-    //当用户鼠标滚轮动画布时跟去滚动方向操作x,y并且刷新点阵
-    PatternCanvas.addEventListener("wheel", function(e) {
-        MouseScrollWheel(e,PatternCanvasVirtual,PatternData);
-    });
-    //当用户点击画布时，记录点击点的虚拟点阵坐标
-    PatternCanvas.addEventListener("click", function(e) {
-        CanvasClickClick(e,PatternCanvasVirtual,PatternData);
-    });
-    //当用户移动鼠标时，记录鼠标位置
-    PatternCanvas.addEventListener("mousemove", function(e) {
-        e.preventDefault();
-        HandleMouseMove(e,PatternCanvasVirtual,PatternData);
-    });
 }
 //处理PatternCanvasMouseMove消息
 function PatternCanvasMouseMoveHandler(Message){
@@ -285,6 +362,34 @@ function PatternCanvasClaw() {
     let Message = globalThis.PatternCanvas.Messages.shift();
     MessageProcessing(Message);
 }
-
+//触发器注册
+function TriggerRegistration(PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
+    //初始化变量
+    let PatternCanvas = document.getElementById("PatternCanvas");
+    //初始化复制按钮
+    const PatternBottomContainer = document.getElementById("PatternBottomContainer");
+    PatternBottomContainer.addEventListener("click", function () {
+        //复制笔顺
+    });
+    //窗口大小变化时重新设置尺寸并刷新点阵
+    window.addEventListener('resize', function(e) {
+        ScreenSizeChanges(PatternCanvasVirtual,PatternData);
+    });
+    //当用户鼠标滚轮动画布时跟去滚动方向操作x,y并且刷新点阵
+    PatternCanvas.addEventListener("wheel", function(e) {
+        MouseScrollWheel(e,PatternCanvasVirtual,PatternData);
+    });
+    //当用户点击画布时，记录点击点的虚拟点阵坐标
+    PatternCanvas.addEventListener("click", function(e) {
+        CanvasClickClick(e,PatternCanvasVirtual,PatternData);
+    });
+    //当用户移动鼠标时，记录鼠标位置
+    PatternCanvas.addEventListener("mousemove", function(e) {
+        e.preventDefault();
+        HandleMouseMove(e,PatternCanvasVirtual,PatternData);
+    });
+    //每50ms刷新一次点阵
+    setInterval(PatternCanvasClaw,10);
+}
 //页面加载完成后初始化
 window.addEventListener('DOMContentLoaded', PatternCanvas);
