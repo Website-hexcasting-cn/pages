@@ -1,7 +1,7 @@
 //Main Function
 function PatternCanvas() {
     //初始化点阵数据
-    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1,debug:false};
+    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1,debug:false,Mode:"NotFreePainting"};
     //初始化变量
     globalThis.PatternCanvasVirtual = CreateVirtualPatternCanvas();
     globalThis.PatternCanvas.Messages = [];
@@ -291,17 +291,50 @@ function CalculateAngleBetweenTwoSides(FirstPoint, CommonPoint, SecondPoint) {
 //鼠标移动处理函数
 function HandleMouseMove(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let MouseMovePoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
-    if (MouseMovePoint !== undefined) {
+    if (MouseMovePoint !== undefined && PatternData.Mode === "FreePainting") {
         //记录鼠标移动点的虚拟点阵坐标
         globalThis.PatternCanvas.Messages.push({Type:"PatternCanvasMouseMove",x:MouseMovePoint.x,y:MouseMovePoint.y});
         //更新高亮点并触发重绘
         globalThis.PatternCanvas.HighlightPoint = MouseMovePoint;
         RefreshPatternCanvas();
-    } else {
+    }else if (MouseMovePoint !== undefined && PatternData.Mode !== "FreePainting"){
+        //如果不在自由绘制模式，判断是否相邻
+        if (IsAdjacentPoint(MouseMovePoint)){
+            //如果相邻，记录鼠标移动点的虚拟点阵坐标
+            globalThis.PatternCanvas.Messages.push({Type:"PatternCanvasMouseMove",x:MouseMovePoint.x,y:MouseMovePoint.y});
+            //更新高亮点并触发重绘
+            globalThis.PatternCanvas.HighlightPoint = MouseMovePoint;
+            RefreshPatternCanvas();
+        }
+    }
+    else {
         globalThis.PatternCanvas.HighlightPoint = undefined;
         RefreshPatternCanvas();
     }
 }
+//判断鼠标移动点是否在相对于选中的上一点的虚拟坐标[1,0][-1,0][0,-1][0,1][1,1][1,-1]中的一点
+function IsAdjacentPoint(MouseMovePoint){
+    //如果Path为空，没有上一个点，直接返回false
+    if (globalThis.PatternCanvas.Path.length === 0) {
+        return true;
+    }
+    //计算选中点MouseMovePoint与globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-1]的相对x,y坐标
+    let Last = globalThis.PatternCanvas.Path[globalThis.PatternCanvas.Path.length-1];
+    let DeltaX = MouseMovePoint.x - Last.x;
+    let DeltaY = MouseMovePoint.y - Last.y;
+    //判断是否在[1,0][-1,0][0,-1][0,1][1,1][1,-1]中的一点
+    if (Math.abs(DeltaX) === 1 && Math.abs(DeltaY) === 0) {
+        return true;
+    }
+    if (Math.abs(DeltaX) === 0 && Math.abs(DeltaY) === 1) {
+        return true;
+    }
+    if (Math.abs(DeltaX) === 1 && Math.abs(DeltaY) === 1) {
+        return true;
+    }
+}
+
+
 //点击事件
 function CanvasClickClick(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let ClickPoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
