@@ -1,7 +1,7 @@
 //Main Function
 function PatternCanvas() {
     //初始化点阵数据
-    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1,debug:false,Mode:"NotFreePainting"};
+    globalThis.PatternData = {PointWithinColor: "#1890ff",PointOutsideColor: "#bae7ff",Spacing: 80,Size: 5,PatternLineColor: "#009dffff",PatternLineWidth: 4,SelectPointSize: 1,MouseCloseToTheDisplayPointRange: 1.5,debug:false,Mode:["NotFreePainting",'MouseCloseToTheDisplayPoint']};
     //初始化变量
     globalThis.PatternCanvasVirtual = CreateVirtualPatternCanvas();
     globalThis.PatternCanvas.Messages = [];
@@ -34,12 +34,21 @@ function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtu
     let StartJ = Math.floor(-PatternCanvasVirtual.Y / PatternData.Spacing) - 1;
     let EndJ = Math.ceil((CanvasHeight - PatternCanvasVirtual.Y) / PatternData.Spacing) + 1;
     //绘制六边形点状矩阵
+    let IsMouseCloseToTheDisplayPointMode = PatternData.Mode.includes("MouseCloseToTheDisplayPoint");
+    let MousePosition = globalThis.PatternCanvas.MousePosition;
+    //如果处于 MouseCloseToTheDisplayPoint 模式且没有鼠标位置，跳过整个点阵渲染
+    if (!(IsMouseCloseToTheDisplayPointMode && !MousePosition)) {
     for (let i = StartI; i < EndI; i++) {
         for (let j = StartJ; j < EndJ; j++) {
             //偶数行在x轴上偏移Spacing/2
             let OffsetX = (j % 2 === 0) ? 0 : PatternData.Spacing / 2;
             let PointX = i*PatternData.Spacing + OffsetX + PatternCanvasVirtual.X;
             let PointY = j*PatternData.Spacing + PatternCanvasVirtual.Y;
+            //如果处于 MouseCloseToTheDisplayPoint 模式，只渲染鼠标周围的点
+            if (IsMouseCloseToTheDisplayPointMode && MousePosition) {
+                let Distance = Math.sqrt(Math.pow(PointX - MousePosition.x, 2) + Math.pow(PointY - MousePosition.y, 2));
+                if (Distance > PatternData.Spacing * PatternData.MouseCloseToTheDisplayPointRange) continue;
+            }
             //为每个点创建独立的渐变
             let Gradient = PatternCanvasCtx.createRadialGradient(
                 PointX, PointY, 0,
@@ -60,6 +69,7 @@ function RefreshPatternCanvas(PatternCanvasVirtual=globalThis.PatternCanvasVirtu
                 PatternCanvasCtx.font = "12px Arial";
                 PatternCanvasCtx.fillText(i + "," + j, PointX + 5, PointY - 5);
             }
+        }
         }
     }
     //绘制图案
@@ -290,14 +300,18 @@ function CalculateAngleBetweenTwoSides(FirstPoint, CommonPoint, SecondPoint) {
 }
 //鼠标移动处理函数
 function HandleMouseMove(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
+    let PatternCanvas = document.getElementById("PatternCanvas");
+    let MouseX = e.clientX - PatternCanvas.offsetLeft;
+    let MouseY = e.clientY - PatternCanvas.offsetTop;
+    globalThis.PatternCanvas.MousePosition = {x: MouseX, y: MouseY};
     let MouseMovePoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
-    if (MouseMovePoint !== undefined && PatternData.Mode === "FreePainting") {
+    if (MouseMovePoint !== undefined && PatternData.Mode.includes("FreePainting")) {
         //记录鼠标移动点的虚拟点阵坐标
         globalThis.PatternCanvas.Messages.push({Type:"PatternCanvasMouseMove",x:MouseMovePoint.x,y:MouseMovePoint.y});
         //更新高亮点并触发重绘
         globalThis.PatternCanvas.HighlightPoint = MouseMovePoint;
         RefreshPatternCanvas();
-    }else if (MouseMovePoint !== undefined && PatternData.Mode !== "FreePainting"){
+    }else if (MouseMovePoint !== undefined && PatternData.Mode.includes("NotFreePainting")){
         //如果不在自由绘制模式，判断是否相邻
         if (IsAdjacentPoint(MouseMovePoint)){
             //如果相邻，记录鼠标移动点的虚拟点阵坐标
@@ -333,8 +347,6 @@ function IsAdjacentPoint(MouseMovePoint){
         return true;
     }
 }
-
-
 //点击事件
 function CanvasClickClick(e,PatternCanvasVirtual=globalThis.PatternCanvasVirtual,PatternData=globalThis.PatternData) {
     let ClickPoint = IsMouseOverPoint(e,PatternCanvasVirtual,PatternData);
