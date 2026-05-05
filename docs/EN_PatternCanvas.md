@@ -19,7 +19,9 @@ Global configuration object storing grid styling and parameters.
 | PatternLineColor | string | "#009dffff" | Pattern line color |
 | PatternLineWidth | number | 4 | Pattern line width |
 | SelectPointSize | number | 1 | Highlight dot scale multiplier |
+| MouseCloseToTheDisplayPointRange | number | 1.5 | Mouse proximity radius (in grid spacing units) |
 | debug | boolean | false | Whether to display virtual coordinates |
+| Mode | Array | ["NotFreePainting", "MouseCloseToTheDisplayPoint"] | Rendering mode list |
 
 ### PatternCanvasVirtual
 
@@ -38,6 +40,46 @@ Virtual canvas object storing pattern data and canvas offset.
 | StrokeOrder | Array<{x,y}> | List of stroke points (virtual coordinates) |
 | StartingPointX | number | Starting point X coordinate |
 | StartingPointY | number | Starting point Y coordinate |
+
+### PatternCanvasState
+
+Runtime state object (exposed as read-only).
+
+| Property | Type | Description |
+|------|------|------|
+| Messages | Array | Message queue |
+| Path | Array<{x,y}> | Current drawing path |
+| HighlightPoint | {x,y} \| undefined | Currently highlighted point |
+| DrawingStatus | boolean | Whether currently drawing |
+| MousePosition | {x,y} \| undefined | Current mouse pixel coordinates |
+
+---
+
+## Exposed API
+
+`PatternCanvas()` returns an object containing the following members:
+
+### Exposed Functions
+
+| Function | Description |
+|--------|------|
+| VirtualToReal(x, y) | Convert virtual coordinates to real pixel coordinates |
+| ScreenSizeChanges() | Handle window size changes |
+| IsMouseOverPoint(e) | Detect if mouse is over a grid point |
+| CalculateRelativeDirectionCode(FromPoint, ToPoint, PreviousDirectionIndex) | Calculate relative direction encoding between two points |
+| PatternCanvasVirtualToPatternListPreprocessPatternList(PatternListArray) | Preprocess pattern list |
+| PatternCanvasVirtualToPatternList() | Convert patterns to string list |
+| IsAdjacentPoint(MouseMovePoint) | Check if two points are adjacent |
+| CreateVirtualPatternCanvas(StartingX, StartingY) | Create virtual canvas object |
+| RefreshPatternCanvas() | Refresh canvas rendering |
+| GetPatternData() | Get a copy of PatternData configuration |
+
+### Exposed Variables
+
+| Variable | Modifiable | Description |
+|--------|--------|------|
+| PatternCanvasState | No (Object.freeze) | Runtime state object |
+| PatternCanvasVirtual | Yes | Virtual canvas object (X, Y, Patterns can be modified directly) |
 
 ---
 
@@ -59,6 +101,22 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
+### VirtualToReal(x, y)
+
+**Purpose**: Converts virtual grid coordinates to real pixel coordinates.
+
+**Parameters**:
+- `x`: Virtual X coordinate
+- `y`: Virtual Y coordinate
+
+**Returns**: `{ x, y }` real pixel coordinates
+
+**Implementation**:
+- Even rows are offset on the X axis by `Spacing / 2`
+- Adds virtual canvas offset `PatternCanvasVirtual.X` / `.Y`
+
+---
+
 ### resizeCanvas()
 
 **Purpose**: Sets Canvas size to window dimensions.
@@ -69,23 +127,20 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### RefreshPatternCanvas(PatternCanvasVirtual, PatternData, HighlightPoint)
+### RefreshPatternCanvas()
 
 **Purpose**: Refreshes the entire dot grid canvas, including the grid, saved patterns, drawing preview, and highlighted dot.
-
-**Parameters**:
-- `PatternCanvasVirtual`: Virtual canvas object
-- `PatternData`: Style configuration
-- `HighlightPoint`: Currently highlighted dot (optional)
 
 **Implementation**:
 1. Clears the canvas
 2. Calculates visible virtual coordinate range
-3. Draws hexagonal dot grid (even rows offset by `Spacing/2`)
-4. Draws saved pattern line segments
-5. Draws current drawing path preview
-6. Draws highlighted dot (enlarged)
-7. **Debug mode**: Annotates virtual coordinates `(i,j)` next to each dot
+3. If mode includes `MouseCloseToTheDisplayPoint` and mouse is not on canvas, skips grid rendering
+4. Draws hexagonal dot grid (even rows offset by `Spacing/2`)
+5. If mode includes `MouseCloseToTheDisplayPoint`, only renders dots within specified radius around mouse
+6. Draws saved pattern line segments
+7. Draws current drawing path preview
+8. Draws highlighted dot (enlarged)
+9. **Debug mode**: Annotates virtual coordinates `(i,j)` next to each dot
 
 ---
 
@@ -101,7 +156,7 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### ScreenSizeChanges(PatternCanvasVirtual, PatternData)
+### ScreenSizeChanges()
 
 **Purpose**: Re-adjusts canvas and refreshes when window size changes.
 
@@ -109,7 +164,7 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### MouseScrollWheel(e, PatternCanvasVirtual, PatternData)
+### MouseScrollWheel(e)
 
 **Purpose**: Handles mouse wheel events to pan the canvas.
 
@@ -119,7 +174,7 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### IsMouseOverPoint(e, PatternCanvasVirtual, PatternData)
+### IsMouseOverPoint(e)
 
 **Purpose**: Detects if the mouse is near a grid dot.
 
@@ -135,19 +190,20 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### HandleMouseMove(e, PatternCanvasVirtual, PatternData)
+### HandleMouseMove(e)
 
-**Purpose**: Handles mouse movement and updates the highlighted dot.
+**Purpose**: Handles mouse movement and updates the highlighted dot and mouse position.
 
 **Implementation**:
-1. Calls `IsMouseOverPoint` to detect
-2. If near a dot, sends `PatternCanvasMouseMove` message and sets highlight
-3. If not near, clears highlight
-4. Triggers `RefreshPatternCanvas()`
+1. Records mouse pixel coordinates to `PatternCanvasState.MousePosition`
+2. Calls `IsMouseOverPoint` to detect
+3. If near a dot, sends `PatternCanvasMouseMove` message and sets highlight
+4. If not near, clears highlight
+5. Triggers `RefreshPatternCanvas()`
 
 ---
 
-### CanvasClickClick(e, PatternCanvasVirtual, PatternData)
+### CanvasClickClick(e)
 
 **Purpose**: Handles mouse clicks and records the clicked dot.
 
@@ -194,7 +250,7 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### PatternCanvasVirtualToPatternList(PatternCanvasVirtual)
+### PatternCanvasVirtualToPatternList()
 
 **Purpose**: Converts patterns in the virtual canvas to an encoding list.
 
@@ -276,7 +332,22 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ---
 
-### TriggerRegistration(PatternCanvasVirtual, PatternData)
+### IsAdjacentPoint(MouseMovePoint)
+
+**Purpose**: Checks if the mouse point is adjacent to the last point in the path.
+
+**Parameters**:
+- `MouseMovePoint`: Current mouse point `{x, y}`
+
+**Returns**: `true` if adjacent
+
+**Implementation**:
+- Returns `true` if path is empty
+- Checks if differences in X and Y directions satisfy adjacency conditions
+
+---
+
+### TriggerRegistration()
 
 **Purpose**: Registers all event listeners.
 
@@ -303,8 +374,11 @@ Virtual canvas object storing pattern data and canvas offset.
 - Six direction angles: 0°, 60°, 120°, 180°, 240°, 300°
 
 ## Embedded Usage
+
 Create a canvas element with id "PatternCanvas" and load the script.
+
 Example:
+
 ```html
 <canvas id="PatternCanvas"></canvas>
 <script src="/js/PatternCanvas.js"></script>
