@@ -4,6 +4,46 @@
 
 PatternCanvas.js is an HTML5 Canvas-based hexagonal dot grid pattern drawing and encoding library. It allows users to draw patterns on a hexagonal grid and converts them into relative direction encoding strings.
 
+## Quick Start
+
+Create a canvas element with id "PatternCanvas" and load the script:
+
+```html
+<canvas id="PatternCanvas"></canvas>
+<script src="/js/PatternCanvas.js"></script>
+```
+
+## Initialization Function
+
+### PatternCanvas(CanvasElement, Config)
+
+**Purpose**: Initializes the entire dot grid system.
+
+**Parameters**:
+- `CanvasElement` (optional): Canvas DOM element, defaults to finding `id="PatternCanvas"`
+- `Config` (optional): Configuration object that overrides default PatternData settings
+
+**Returns**: Exposed API object containing `Functions`, `ReadOnly`, and `Mutable` categories
+
+**Example**:
+```javascript
+// Use default configuration
+let api = PatternCanvas();
+
+// Pass custom Canvas element
+let canvas = document.getElementById("MyCanvas");
+let api = PatternCanvas(canvas);
+
+// Pass custom configuration
+let api = PatternCanvas(null, {
+    Spacing: 100,
+    PatternLineColor: "#ff0000",
+    debug: true
+});
+```
+
+---
+
 ## Core Data Structures
 
 ### PatternData
@@ -43,7 +83,7 @@ Virtual canvas object storing pattern data and canvas offset.
 
 ### PatternCanvasState
 
-Runtime state object (exposed as read-only).
+Runtime state object (internal use, accessed via API).
 
 | Property | Type | Description |
 |------|------|------|
@@ -59,11 +99,11 @@ Runtime state object (exposed as read-only).
 
 `PatternCanvas()` returns an object containing the following members:
 
-### Exposed Functions
+### api.Functions — Exposed Functions
 
 | Function | Description |
 |--------|------|
-| VirtualToReal(x, y) | Convert virtual coordinates to real pixel coordinates |
+| VirtualToReal(Point) | Convert virtual coordinates to real pixel coordinates |
 | ScreenSizeChanges() | Handle window size changes |
 | IsMouseOverPoint(e) | Detect if mouse is over a grid point |
 | CalculateRelativeDirectionCode(FromPoint, ToPoint, PreviousDirectionIndex) | Calculate relative direction encoding between two points |
@@ -71,76 +111,145 @@ Runtime state object (exposed as read-only).
 | PatternCanvasVirtualToPatternList() | Convert patterns to string list |
 | IsAdjacentPoint(MouseMovePoint) | Check if two points are adjacent |
 | CreateVirtualPatternCanvas(StartingX, StartingY) | Create virtual canvas object |
-| RefreshPatternCanvas() | Refresh canvas rendering |
-| GetPatternData() | Get a copy of PatternData configuration |
 
-### Exposed Variables
+### api.ReadOnly — Read-Only Variables
 
-| Variable | Modifiable | Description |
-|--------|--------|------|
-| PatternCanvasState | No (Object.freeze) | Runtime state object |
-| PatternCanvasVirtual | Yes | Virtual canvas object (X, Y, Patterns can be modified directly) |
+| Variable | Description |
+|--------|------|
+| PatternCanvas | Currently bound Canvas DOM element (getter) |
+
+### api.Mutable — Modifiable Variables
+
+| Variable | Description |
+|--------|------|
+| PatternCanvasVirtual | Virtual canvas object (X, Y, Patterns can be modified directly) |
+| PatternData | Configuration data object (colors, spacing, etc. can be modified directly) |
+| Path | Current drawing path (getter/setter) |
+
+---
+
+## Usage Example
+
+```javascript
+let api = PatternCanvas();
+
+// Call exposed functions
+let realPos = api.Functions.VirtualToReal({x: 0, y: 0});
+console.log(realPos); // {x: 40, y: 0}
+
+// Read read-only property
+console.log(api.ReadOnly.PatternCanvas.width);
+
+// Modify mutable state
+api.Mutable.PatternData.Spacing = 100;
+api.Mutable.PatternCanvasVirtual.X = 50;
+api.Mutable.Path = [];
+
+// Get pattern encoding
+let patterns = api.Functions.PatternCanvasVirtualToPatternList();
+console.log(patterns); // [[0, 0, "ea"], [1, 2, "wqd"]]
+```
 
 ---
 
 ## Function Reference
 
-### PatternCanvas()
-
-**Purpose**: Initializes the entire dot grid system.
-
-**Implementation**:
-1. Initializes `PatternData` configuration
-2. Creates virtual canvas `PatternCanvasVirtual`
-3. Initializes message queue and drawing path
-4. Registers event triggers
-5. Sets canvas size and performs initial refresh
-6. Starts the timed message processing loop
-
-**Call timing**: Automatically called after page load.
-
----
-
-### VirtualToReal(x, y)
+### VirtualToReal(Point)
 
 **Purpose**: Converts virtual grid coordinates to real pixel coordinates.
 
 **Parameters**:
-- `x`: Virtual X coordinate
-- `y`: Virtual Y coordinate
+- `Point`: Virtual coordinates `{x, y}`
 
 **Returns**: `{ x, y }` real pixel coordinates
 
-**Implementation**:
+**Note**:
 - Even rows are offset on the X axis by `Spacing / 2`
-- Adds virtual canvas offset `PatternCanvasVirtual.X` / `.Y`
+- Adds virtual canvas offset
 
 ---
 
-### resizeCanvas()
+### ScreenSizeChanges()
 
-**Purpose**: Sets Canvas size to window dimensions.
-
-**Implementation**:
-- Gets the `PatternCanvas` element
-- Sets `width` and `height` to `window.innerWidth` / `window.innerHeight`
+**Purpose**: Re-adjusts canvas and refreshes when window size changes.
 
 ---
 
-### RefreshPatternCanvas()
+### IsMouseOverPoint(e)
 
-**Purpose**: Refreshes the entire dot grid canvas, including the grid, saved patterns, drawing preview, and highlighted dot.
+**Purpose**: Detects if the mouse is near a grid dot.
 
-**Implementation**:
-1. Clears the canvas
-2. Calculates visible virtual coordinate range
-3. If mode includes `MouseCloseToTheDisplayPoint` and mouse is not on canvas, skips grid rendering
-4. Draws hexagonal dot grid (even rows offset by `Spacing/2`)
-5. If mode includes `MouseCloseToTheDisplayPoint`, only renders dots within specified radius around mouse
-6. Draws saved pattern line segments
-7. Draws current drawing path preview
-8. Draws highlighted dot (enlarged)
-9. **Debug mode**: Annotates virtual coordinates `(i,j)` next to each dot
+**Parameter**: Mouse event object `e`
+
+**Returns**: If near a dot, returns `{ x, y }` (virtual coordinates); otherwise returns `undefined`
+
+**Note**: Checks if distance is within `Spacing * 0.3`
+
+---
+
+### CalculateRelativeDirectionCode(FromPoint, ToPoint, PreviousDirectionIndex)
+
+**Purpose**: Calculates the relative direction encoding between two points.
+
+**Parameters**:
+- `FromPoint`: Starting point `{x, y}`
+- `ToPoint`: Ending point `{x, y}`
+- `PreviousDirectionIndex`: Previous absolute direction index (0-5)
+
+**Returns**: `{ DirectionCode, CurrentDirectionIndex }`
+
+**Relative Direction Encoding Map**:
+
+| Turn Value | Angle Change | Code | Meaning |
+|--------|----------|------|------|
+| 0 | 0° | `w` | Straight |
+| +1 | +60° | `q` | Turn right 60° |
+| +2 | +120° | `a` | Turn right 120° |
+| +3 | 180° | `s` | U-turn |
+| -1 | -60° | `e` | Turn left 60° |
+| -2 | -120° | `d` | Turn left 120° |
+
+---
+
+### PatternCanvasVirtualToPatternListPreprocessPatternList(PatternListArray)
+
+**Purpose**: Preprocesses pattern coordinates.
+
+**Parameter**:
+- `PatternListArray`: Pattern list
+
+**Returns**: Preprocessed pattern list (does not modify original data)
+
+**Note**: When `y` is even, subtracts `0.5` from `x` coordinate to correct even-row offset in hexagonal grid
+
+---
+
+### PatternCanvasVirtualToPatternList()
+
+**Purpose**: Converts patterns in the virtual canvas to an encoding list.
+
+**Returns**: `[[StartingPointX, StartingPointY, PatternString], ...]`
+
+**Output Example**:
+```javascript
+[[0, 0, "ea"], [1, 2, "wqd"]]
+```
+
+---
+
+### IsAdjacentPoint(MouseMovePoint)
+
+**Purpose**: Checks if the mouse point is adjacent to the last point in the path.
+
+**Parameter**:
+- `MouseMovePoint`: Current mouse point `{x, y}`
+
+**Returns**: `true` if adjacent
+
+**Adjacency Conditions** (hexagonal grid):
+- `|DeltaX| === 1 && |DeltaY| === 0` (horizontal adjacent)
+- `|DeltaX| === 0 && |DeltaY| === 1` (vertical adjacent)
+- `|DeltaX| === 1 && |DeltaY| === 1` (diagonal adjacent)
 
 ---
 
@@ -156,216 +265,27 @@ Runtime state object (exposed as read-only).
 
 ---
 
-### ScreenSizeChanges()
-
-**Purpose**: Re-adjusts canvas and refreshes when window size changes.
-
-**Implementation**: Calls `resizeCanvas()` + `RefreshPatternCanvas()`
-
----
-
-### MouseScrollWheel(e)
-
-**Purpose**: Handles mouse wheel events to pan the canvas.
-
-**Implementation**:
-- Adjusts `PatternCanvasVirtual.X` / `.Y` based on scroll direction (X or Y axis)
-- Calls `RefreshPatternCanvas()` to refresh
-
----
-
-### IsMouseOverPoint(e)
-
-**Purpose**: Detects if the mouse is near a grid dot.
-
-**Parameter**: Mouse event object `e`
-
-**Returns**: If near a dot, returns `{ x, y }` (virtual coordinates); otherwise returns `undefined`
-
-**Implementation**:
-1. Converts mouse coordinates to virtual coordinates
-2. Accounts for even row offset
-3. Calculates the real pixel position of the nearest dot
-4. Checks if distance is within `Spacing * 0.3`
-
----
-
-### HandleMouseMove(e)
-
-**Purpose**: Handles mouse movement and updates the highlighted dot and mouse position.
-
-**Implementation**:
-1. Records mouse pixel coordinates to `PatternCanvasState.MousePosition`
-2. Calls `IsMouseOverPoint` to detect
-3. If near a dot, sends `PatternCanvasMouseMove` message and sets highlight
-4. If not near, clears highlight
-5. Triggers `RefreshPatternCanvas()`
-
----
-
-### CanvasClickClick(e)
-
-**Purpose**: Handles mouse clicks and records the clicked dot.
-
-**Implementation**: Sends `PatternCanvasClickPoint` message
-
----
-
-### PatternCanvasMouseMoveHandler(Message)
-
-**Purpose**: Handles mouse movement messages and records the drawing path.
-
-**Implementation**:
-1. If drawing, adds new point to `Path`
-2. **Undo mechanism**: If three consecutive points are identical, deletes the last two points (prevents misselection)
-
----
-
-### PatternCanvasClickPointHandler(Message)
-
-**Purpose**: Handles click messages to start/end drawing.
-
-**Implementation**:
-1. Toggles `DrawingStatus`
-2. If ending drawing, packages `Path` as a Pattern into `Patterns`
-3. Clears `Path`
-
----
-
-### MessageProcessing(Message)
-
-**Purpose**: Message dispatch center.
-
-**Supported message types**:
-- `PatternCanvasClickPoint`
-- `PatternCanvasMouseMove`
-
----
-
-### PatternCanvasClaw()
-
-**Purpose**: Timed message processing function.
-
-**Implementation**: Processes one message from the queue every 10ms.
-
----
-
-### PatternCanvasVirtualToPatternList()
-
-**Purpose**: Converts patterns in the virtual canvas to an encoding list.
-
-**Returns**: `[[StartingPointX, StartingPointY, PatternString], ...]`
-
-**Implementation**:
-1. Calls preprocessing function to correct coordinates
-2. Iterates through each pattern's stroke order
-3. Uses `CalculateRelativeDirectionCode` to calculate relative direction encoding
-4. Removes the default first `w` (straight)
-5. Returns `[startX, startY, encodingString]`
-
-**Output example**:
-```javascript
-[[0, 0, "ea"], [1, 2, "wqd"]]
-```
-
----
-
-### PatternCanvasVirtualToPatternListPreprocessPatternList(PatternListArray)
-
-**Purpose**: Preprocesses pattern coordinates.
-
-**Implementation**:
-- Iterates through each pattern's `StrokeOrder`
-- When `y` is even, subtracts `0.5` from `x` coordinate
-- Returns a new preprocessed pattern list (does not modify original data)
-
-**Note**: This corrects the even-row offset in the hexagonal grid for more accurate subsequent direction calculations.
-
----
-
-### CalculateRelativeDirectionCode(FromPoint, ToPoint, PreviousDirectionIndex)
-
-**Purpose**: Calculates the relative direction encoding between two points.
-
-**Parameters**:
-- `FromPoint`: Starting point `{x, y}`
-- `ToPoint`: Ending point `{x, y}`
-- `PreviousDirectionIndex`: Previous absolute direction index (0-5)
-
-**Returns**: `{ DirectionCode, CurrentDirectionIndex }`
-
-**Implementation**:
-1. Calculates point differences `DeltaX`, `DeltaY`
-2. Uses `Math.atan2` to calculate current absolute direction angle
-3. Maps angle to 6 direction indices (0-5)
-4. Calculates relative turn: `CurrentDirectionIndex - PreviousDirectionIndex`
-5. Normalizes to `-3` to `+3`
-6. Maps to relative encoding:
-
-| Turn Value | Angle Change | Code | Meaning |
-|--------|----------|------|------|
-| 0 | 0° | `w` | Straight |
-| +1 | +60° | `q` | Turn right 60° |
-| +2 | +120° | `a` | Turn right 120° |
-| +3 | 180° | `s` | U-turn |
-| -1 | -60° | `e` | Turn left 60° |
-| -2 | -120° | `d` | Turn left 120° |
-
----
-
-### CalculateAngleBetweenTwoSides(FirstPoint, CommonPoint, SecondPoint)
-
-**Purpose**: Calculates the angle between two sides (in radians).
-
-**Parameters**:
-- `FirstPoint`: Point on the first side
-- `CommonPoint`: Intersection point of both sides
-- `SecondPoint`: Point on the second side
-
-**Returns**: Angle in radians
-
-**Implementation**:
-1. Constructs two vectors: `VectorA = FirstPoint - CommonPoint`
-2. Calculates dot product and magnitudes
-3. Uses `Math.acos` to calculate the angle
-4. Clips cosine value to boundaries (prevents floating point errors)
-
----
-
-### IsAdjacentPoint(MouseMovePoint)
-
-**Purpose**: Checks if the mouse point is adjacent to the last point in the path.
-
-**Parameters**:
-- `MouseMovePoint`: Current mouse point `{x, y}`
-
-**Returns**: `true` if adjacent
-
-**Implementation**:
-- Returns `true` if path is empty
-- Checks if differences in X and Y directions satisfy adjacency conditions
-
----
-
-### TriggerRegistration()
-
-**Purpose**: Registers all event listeners.
-
-**Registered events**:
-- `resize`: Window size change
-- `wheel`: Mouse wheel
-- `click`: Mouse click
-- `mousemove`: Mouse movement
+## Rendering Modes
+
+### Mode Configuration
+
+| Mode | Description |
+|------|------|
+| `"NotFreePainting"` | Can only move to adjacent points |
+| `"FreePainting"` | Can freely move to any point |
+| `"MouseCloseToTheDisplayPoint"` | Only render dots around mouse (performance optimization) |
 
 ---
 
 ## Usage Flow
 
-1. After page load, `PatternCanvas()` initializes automatically
+1. After page load, `PatternCanvas()` initializes
 2. User moves mouse on canvas, highlighting the nearest dot
 3. Click to start drawing, move mouse to record path
 4. Click again to end drawing, pattern is saved
 5. Call `PatternCanvasVirtualToPatternList()` to get encoding
+
+---
 
 ## Hexagonal Grid Coordinate System
 
@@ -373,13 +293,10 @@ Runtime state object (exposed as read-only).
 - Even rows are offset on the X axis by `Spacing / 2`
 - Six direction angles: 0°, 60°, 120°, 180°, 240°, 300°
 
-## Embedded Usage
-
-Create a canvas element with id "PatternCanvas" and load the script.
-
-Example:
-
-```html
-<canvas id="PatternCanvas"></canvas>
-<script src="/js/PatternCanvas.js"></script>
+```
+     ●     ●     ●     ●     ●
+       ●     ●     ●     ●
+     ●     ●     ●     ●     ●
+       ●     ●     ●     ●
+     ●     ●     ●     ●     ●
 ```

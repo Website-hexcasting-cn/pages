@@ -12,7 +12,8 @@
     <canvas id="PatternCanvas" Mode="FreePainting"></canvas>
     <script src="/js/PatternCanvas.js"></script>
     <script>
-        window.PatternCanvasInstance = PatternCanvas();
+        //等待页面加载完成后再创建PatternCanvas实例
+        window.addEventListener('DOMContentLoaded', function () {window.PatternCanvasInstance = PatternCanvas();});
     </script>
     <div id="PatternBottomContainer">
         <p>点击复制笔顺</p>
