@@ -10,8 +10,27 @@ Create a canvas element with id "PatternCanvas" and load the script:
 
 ```html
 <canvas id="PatternCanvas"></canvas>
-<script src="/js/PatternCanvas.js"></script>
+<script type="module">
+    import { PatternCanvas } from '/js/PatternCanvas/index.js';
+    // Wait for the page to finish loading before creating the PatternCanvas instance
+    window.addEventListener('DOMContentLoaded', function () {window.PatternCanvasInstance = PatternCanvas();});
+</script>
 ```
+
+## Modular Structure
+
+PatternCanvas now uses an ES6 modular architecture with code split into the following modules:
+
+- **Utils.js** - Utility functions (color conversion, angle calculation, etc.)
+- **VirtualCanvas.js** - Virtual canvas management
+- **Renderer.js** - Rendering related functions
+- **GridManager.js** - Grid management
+- **PatternProcessor.js** - Pattern processing
+- **MessageHandler.js** - Message handling
+- **EventHandler.js** - Event handling
+- **index.js** - Main entry file
+
+All functionality remains backward compatible, just update the import method.
 
 ## Initialization Function
 
@@ -36,9 +55,22 @@ let api = PatternCanvas(canvas);
 
 // Pass custom configuration
 let api = PatternCanvas(null, {
-    Spacing: 100,
-    PatternLineColor: "#ff0000",
-    debug: true
+    Point: {
+        InnerColor: "#ff0000",
+        OuterColor: "#ffcccc"
+    },
+    Grid: {
+        Spacing: 100
+    },
+    Line: {
+        Color: "#ff0000",
+        Width: 3
+    },
+    Mode: {
+        FreePainting: true,
+        ShowNearMouse: true
+    },
+    Debug: true
 });
 ```
 
@@ -50,18 +82,50 @@ let api = PatternCanvas(null, {
 
 Global configuration object storing grid styling and parameters.
 
-| Property | Type | Default | Description |
+**Configuration Structure**:
+```javascript
+PatternData = {
+    Point: {
+        InnerColor: "#1890ff",      // Center color of dots
+        OuterColor: "#bae7ff",      // Outer color of dots
+        Size: 5,                    // Dot size
+        SelectedSize: 1             // Highlight dot scale multiplier
+    },
+    Grid: {
+        Spacing: 80                 // Grid spacing (pixels)
+    },
+    Line: {
+        Color: "#009dffff",         // Pattern line color
+        Width: 4                    // Pattern line width
+    },
+    Mouse: {
+        Range: 1.5,                 // Mouse proximity radius (in grid spacing units)
+        FadeRate: 0.7               // Fade rate
+    },
+    Mode: {
+        FreePainting: false,        // Free painting mode
+        ShowNearMouse: true,        // Only show dots near mouse
+        FadeWithDistance: true      // Fade with distance
+    },
+    Debug: false                    // Whether to display debug information
+}
+```
+
+| Property Path | Type | Default | Description |
 |------|------|--------|------|
-| PointWithinColor | string | "#1890ff" | Center color of dots |
-| PointOutsideColor | string | "#bae7ff" | Outer color of dots |
-| Spacing | number | 80 | Grid spacing (pixels) |
-| Size | number | 5 | Dot size |
-| PatternLineColor | string | "#009dffff" | Pattern line color |
-| PatternLineWidth | number | 4 | Pattern line width |
-| SelectPointSize | number | 1 | Highlight dot scale multiplier |
-| MouseCloseToTheDisplayPointRange | number | 1.5 | Mouse proximity radius (in grid spacing units) |
-| debug | boolean | false | Whether to display virtual coordinates |
-| Mode | Array | ["NotFreePainting", "MouseCloseToTheDisplayPoint"] | Rendering mode list |
+| Point.InnerColor | string | "#1890ff" | Center color of dots |
+| Point.OuterColor | string | "#bae7ff" | Outer color of dots |
+| Point.Size | number | 5 | Dot size |
+| Point.SelectedSize | number | 1 | Highlight dot scale multiplier |
+| Grid.Spacing | number | 80 | Grid spacing (pixels) |
+| Line.Color | string | "#009dffff" | Pattern line color |
+| Line.Width | number | 4 | Pattern line width |
+| Mouse.Range | number | 1.5 | Mouse proximity radius (in grid spacing units) |
+| Mouse.FadeRate | number | 0.7 | Fade rate |
+| Mode.FreePainting | boolean | false | Free painting mode (can skip points) |
+| Mode.ShowNearMouse | boolean | true | Only render dots around mouse (performance optimization) |
+| Mode.FadeWithDistance | boolean | true | Fade display based on distance |
+| Debug | boolean | false | Whether to display virtual coordinates |
 
 ### PatternCanvasVirtual
 
@@ -131,6 +195,8 @@ Runtime state object (internal use, accessed via API).
 ## Usage Example
 
 ```javascript
+import { PatternCanvas } from '/js/PatternCanvas/index.js';
+
 let api = PatternCanvas();
 
 // Call exposed functions
@@ -141,7 +207,7 @@ console.log(realPos); // {x: 40, y: 0}
 console.log(api.ReadOnly.PatternCanvas.width);
 
 // Modify mutable state
-api.Mutable.PatternData.Spacing = 100;
+api.Mutable.PatternData.Grid.Spacing = 100;
 api.Mutable.PatternCanvasVirtual.X = 50;
 api.Mutable.Path = [];
 
@@ -269,11 +335,44 @@ console.log(patterns); // [[0, 0, "ea"], [1, 2, "wqd"]]
 
 ### Mode Configuration
 
-| Mode | Description |
-|------|------|
-| `"NotFreePainting"` | Can only move to adjacent points |
-| `"FreePainting"` | Can freely move to any point |
-| `"MouseCloseToTheDisplayPoint"` | Only render dots around mouse (performance optimization) |
+PatternData.Mode object contains the following configurations:
+
+| Configuration | Type | Default | Description |
+|------|------|--------|------|
+| FreePainting | boolean | false | Free painting mode, can skip points; false means can only move to adjacent points |
+| ShowNearMouse | boolean | true | Only render dots around mouse (performance optimization) |
+| FadeWithDistance | boolean | true | Fade display based on distance |
+
+**Mode Combination Examples**:
+
+```javascript
+// Standard mode: can only draw adjacent points, show dots near mouse
+PatternCanvas(null, {
+    Mode: {
+        FreePainting: false,
+        ShowNearMouse: true,
+        FadeWithDistance: true
+    }
+});
+
+// Free painting mode: can skip points
+PatternCanvas(null, {
+    Mode: {
+        FreePainting: true,
+        ShowNearMouse: true,
+        FadeWithDistance: true
+    }
+});
+
+// Show all points mode: no mouse range restriction
+PatternCanvas(null, {
+    Mode: {
+        FreePainting: false,
+        ShowNearMouse: false,
+        FadeWithDistance: false
+    }
+});
+```
 
 ---
 

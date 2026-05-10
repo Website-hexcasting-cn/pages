@@ -10,8 +10,8 @@
 </head>
 <body class="Background">
     <canvas id="PatternCanvas" Mode="FreePainting"></canvas>
-    <script src="/js/PatternCanvas.js"></script>
-    <script>
+    <script type="module">
+        import { PatternCanvas } from '/js/PatternCanvas/index.js';
         //等待页面加载完成后再创建PatternCanvas实例
         window.addEventListener('DOMContentLoaded', function () {window.PatternCanvasInstance = PatternCanvas();});
     </script>
