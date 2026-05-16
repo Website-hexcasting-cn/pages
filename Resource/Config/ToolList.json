@@ -1,0 +1,9 @@
+[
+    {
+        "Name": "向量生成",
+        "Description": "生成相对向量列表",
+        "Id": "VectorGenerator",
+        "Icon": "/Resource/HexcastingLogo.png",
+        "Url": ""
+    }
+]

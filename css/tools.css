@@ -1,45 +1,16 @@
-#ToolContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    margin-top: 40px;
+.card {
+    transform: translateY(30px);
+    list-style-type: none;
+    padding: 0;
 }
-#ToolList[IsToolListText="true"] {
-    display: flex;
-    flex-direction: column;
-    width: 110px;
-    border: 2px solid #ffffff5b;
-    border-radius: 8px;
+.card li {
+    margin-bottom: 10px;
 }
-#ToolList[IsToolListText="false"] {
-    display: flex;
-    flex-direction: column;
-    width: 25px;
-    border: 2px solid #ffffff5b;
-    border-radius: 8px;
+.card li a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #8b19e2;
 }
-#ToolList ul {
-    list-style: none;
-    margin: 0 auto;
-    padding-inline-start: 0px;
-    transform: translate(0px, 0px);
-}
-#ToolList ul li img {
-    display: inline;
-    margin: 0 auto;
-    height: 20px;
-    width: 20px;
-    transform: translate(0, 3px);
-}
-#ToolList[IsToolListText="true"] ul li p {
-    display: inline;
-}
-#ToolList[IsToolListText="false"] ul li p {
-    display: none;
-}
-#ToolContent {
-    display: flex;
-    background-color: antiquewhite;
-    width: 100%;
-    height: 100%;
+.card li a:hover {
+    color: beige;
 }

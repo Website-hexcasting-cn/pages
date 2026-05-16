@@ -1,5 +1,5 @@
 async function RandomIntroduction(){
-    const data = await fetch('Resource/RandomIntroduction.json').then(res=>res.json())
+    const data = await fetch(GetGlobalConstant('RandomIntroduction')).then(res=>res.json())
     const IntroductionTextList=data.Introduction
     const RandomIntroductionText = IntroductionTextList[GetRandom(0, IntroductionTextList.length-1)]
     document.getElementById("IntroductionText").innerHTML = RandomIntroductionText

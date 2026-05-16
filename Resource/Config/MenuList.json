@@ -7,6 +7,6 @@
     {
         "Name": "工具",
         "ID": "MenuTool",
-        "Link": "/OtherPage/Tool"
+        "Link": "/tools"
     }
 ]

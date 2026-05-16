@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatternCanvas</title>
+    <link rel="icon" href="/Resource/Img/HexcastingLogo.png" type="image/png" sizes="540x540">
+    <link rel="stylesheet" href="/css/PatternCanvas.css">
+    <link rel="stylesheet" href="/css/gobal.css">
+</head>
+<body class="Background">
+    <canvas id="PatternCanvas" Mode="FreePainting"></canvas>
+    
+    <button id="TogglePanelBtn" title="打开控制面板">⚙️</button>
+    
+    <div id="PatternControlPanel" class="collapsed">
+        <div class="panel-header">
+            <h3>🎨 PatternCanvas 控制面板</h3>
+            <button id="CollapseBtn" title="收起">◀</button>
+        </div>
+        
+        <div class="panel-content">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="PatternCount">0</div>
+                    <div class="stat-label">图案数量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="PointCount">0</div>
+                    <div class="stat-label">总点数</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">笔画输出</div>
+                <div class="pattern-output" id="PatternOutput">暂无笔画数据</div>
+                <div class="btn-group">
+                    <button id="CopyPatternBtn">📋 复制</button>
+                    <button id="ExportJsonBtn">📄 导出JSON</button>
+                    <button id="ClearPatternsBtn" class="danger">🗑️ 清除</button>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">基础设置</div>
+                <div class="control-row">
+                    <label>点大小</label>
+                    <div class="input-group">
+                        <input type="range" id="PointSize" min="2" max="20" value="5">
+                        <input type="number" id="PointSizeNum" min="2" max="20" value="5">
+                    </div>
+                </div>
+                <div class="control-row">
+                    <label>网格间距</label>
+                    <div class="input-group">
+                        <input type="range" id="GridSpacing" min="40" max="200" value="80">
+                        <input type="number" id="GridSpacingNum" min="40" max="200" value="80">
+                    </div>
+                </div>
+                <div class="control-row">
+                    <label>线条宽度</label>
+                    <div class="input-group">
+                        <input type="range" id="LineWidth" min="1" max="20" value="4">
+                        <input type="number" id="LineWidthNum" min="1" max="20" value="4">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">颜色设置</div>
+                <div class="control-row">
+                    <label>点内部颜色</label>
+                    <input type="color" id="PointInnerColor" value="#1890ff">
+                </div>
+                <div class="control-row">
+                    <label>点外部颜色</label>
+                    <input type="color" id="PointOuterColor" value="#bae7ff">
+                </div>
+                <div class="control-row">
+                    <label>线条颜色</label>
+                    <input type="color" id="LineColor" value="#009dff">
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">渲染模式</div>
+                <div class="control-row checkbox">
+                    <label>显示鼠标附近点</label>
+                    <input type="checkbox" id="ShowNearMouse" checked>
+                </div>
+                <div class="control-row checkbox">
+                    <label>距离渐隐</label>
+                    <input type="checkbox" id="FadeWithDistance" checked>
+                </div>
+                <div class="control-row checkbox">
+                    <label>自由绘画模式</label>
+                    <input type="checkbox" id="FreePainting">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module">
+        import { PatternCanvas } from '/js/PatternCanvas/index.js';
+        
+        window.addEventListener('DOMContentLoaded', function () {
+            const Instance = PatternCanvas();
+            window.PatternCanvasInstance = Instance;
+            
+            const Panel = document.getElementById('PatternControlPanel');
+            const ToggleBtn = document.getElementById('TogglePanelBtn');
+            const CollapseBtn = document.getElementById('CollapseBtn');
+            
+            function TogglePanel(show) {
+                if (show) {
+                    Panel.classList.remove('collapsed');
+                    ToggleBtn.style.display = 'none';
+                } else {
+                    Panel.classList.add('collapsed');
+                    ToggleBtn.style.display = 'flex';
+                }
+            }
+            
+            ToggleBtn.addEventListener('click', () => TogglePanel(true));
+            CollapseBtn.addEventListener('click', () => TogglePanel(false));
+            
+            function UpdateStats() {
+                const Patterns = Instance.Mutable.PatternCanvasVirtual.Patterns;
+                const PatternCount = Patterns.length;
+                let PointCount = 0;
+                Patterns.forEach(p => PointCount += p.StrokeOrder.length);
+                
+                document.getElementById('PatternCount').textContent = PatternCount;
+                document.getElementById('PointCount').textContent = PointCount;
+            }
+            
+            function UpdatePatternOutput() {
+                const PatternList = Instance.Functions.PatternCanvasVirtualToPatternList();
+                const Output = document.getElementById('PatternOutput');
+                
+                if (PatternList.length === 0) {
+                    Output.textContent = '暂无笔画数据';
+                } else {
+                    const StrokeString = PatternList.map(p => '_' + (p[2] || '')).join(',');
+                    Output.textContent = StrokeString;
+                }
+                
+                UpdateStats();
+            }
+            
+            function SyncInputs(rangeId, numId) {
+                const range = document.getElementById(rangeId);
+                const num = document.getElementById(numId);
+                range.addEventListener('input', () => {
+                    num.value = range.value;
+                    ApplySettings();
+                });
+                num.addEventListener('change', () => {
+                    range.value = num.value;
+                    ApplySettings();
+                });
+            }
+            
+            function ApplySettings() {
+                const Data = Instance.Mutable.PatternData;
+                
+                Data.Point.Size = parseInt(document.getElementById('PointSize').value);
+                Data.Grid.Spacing = parseInt(document.getElementById('GridSpacing').value);
+                Data.Line.Width = parseInt(document.getElementById('LineWidth').value);
+                
+                Data.Point.InnerColor = document.getElementById('PointInnerColor').value;
+                Data.Point.OuterColor = document.getElementById('PointOuterColor').value;
+                Data.Line.Color = document.getElementById('LineColor').value + 'ff';
+                
+                Data.Mode.ShowNearMouse = document.getElementById('ShowNearMouse').checked;
+                Data.Mode.FadeWithDistance = document.getElementById('FadeWithDistance').checked;
+                Data.Mode.FreePainting = document.getElementById('FreePainting').checked;
+                
+                Instance.Functions.RefreshPatternCanvas();
+            }
+            
+            SyncInputs('PointSize', 'PointSizeNum');
+            SyncInputs('GridSpacing', 'GridSpacingNum');
+            SyncInputs('LineWidth', 'LineWidthNum');
+            
+            document.getElementById('PointInnerColor').addEventListener('change', ApplySettings);
+            document.getElementById('PointOuterColor').addEventListener('change', ApplySettings);
+            document.getElementById('LineColor').addEventListener('change', ApplySettings);
+            
+            document.getElementById('ShowNearMouse').addEventListener('change', ApplySettings);
+            document.getElementById('FadeWithDistance').addEventListener('change', ApplySettings);
+            document.getElementById('FreePainting').addEventListener('change', ApplySettings);
+            
+            document.getElementById('CopyPatternBtn').addEventListener('click', () => {
+                const PatternList = Instance.Functions.PatternCanvasVirtualToPatternList();
+                const StrokeString = PatternList.map(p => '_' + (p[2] || '')).join(',');
+                navigator.clipboard.writeText(StrokeString).then(() => {
+                    const btn = document.getElementById('CopyPatternBtn');
+                    const originalText = btn.textContent;
+                    btn.textContent = '✅ 已复制!';
+                    setTimeout(() => btn.textContent = originalText, 1500);
+                });
+            });
+            
+            document.getElementById('ExportJsonBtn').addEventListener('click', () => {
+                const PatternList = Instance.Functions.PatternCanvasVirtualToPatternList();
+                const StrokeString = PatternList.map(p => '_' + (p[2] || '')).join(',');
+                const Blob = new Blob([StrokeString], { type: 'text/plain' });
+                const Url = URL.createObjectURL(Blob);
+                const A = document.createElement('a');
+                A.href = Url;
+                A.download = `patterns_${Date.now()}.txt`;
+                A.click();
+                URL.revokeObjectURL(Url);
+            });
+            
+            document.getElementById('ClearPatternsBtn').addEventListener('click', () => {
+                if (confirm('确定要清除所有图案吗？')) {
+                    Instance.Mutable.PatternCanvasVirtual.Patterns = [];
+                    Instance.Functions.RefreshPatternCanvas();
+                    UpdatePatternOutput();
+                }
+            });
+            
+            setInterval(UpdatePatternOutput, 500);
+            UpdatePatternOutput();
+        });
+    </script>
+    
+    <div id="PatternBottomContainer">
+        <p>点击复制笔顺</p>
+    </div>
+</body>
+</html>
