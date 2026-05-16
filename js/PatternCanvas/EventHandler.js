@@ -19,9 +19,15 @@ export function IsAdjacentPoint(MouseMovePoint, PatternCanvasState) {
     let Last = PatternCanvasState.Path[PatternCanvasState.Path.length - 1];
     let DeltaX = MouseMovePoint.x - Last.x;
     let DeltaY = MouseMovePoint.y - Last.y;
-    if (Math.abs(DeltaX) === 1 && Math.abs(DeltaY) === 0) return true;
-    if (Math.abs(DeltaX) === 0 && Math.abs(DeltaY) === 1) return true;
-    if (Math.abs(DeltaX) === 1 && Math.abs(DeltaY) === 1) return true;
+    if (DeltaX === 0 && DeltaY === 0) return true;
+    if (Math.abs(DeltaX) === 1 && DeltaY === 0) return true;
+    if (DeltaX === 0 && Math.abs(DeltaY) === 1) return true;
+    if (Last.y % 2 === 0) {
+        if (DeltaX === -1 && Math.abs(DeltaY) === 1) return true;
+    } else {
+        if (DeltaX === 1 && Math.abs(DeltaY) === 1) return true;
+    }
+    return false;
 }
 
 export function HandleMouseMove(e, PatternCanvasElement, PatternCanvasState, PatternData, IsMouseOverPoint, IsAdjacentPoint, RefreshPatternCanvas) {
