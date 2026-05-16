@@ -28,8 +28,8 @@ async function LoadMenuList() {
         li.id = item.ID;
         // 设置li元素触发器
         li.addEventListener('click', () => {
-            // 切换到新页面
-            window.location.href = GetGlobalConstant(item.Link);
+            const Link = GetGlobalConstant(item.Link) || item.Link;
+            window.location.href = Link;
         });
         // 判断当前页面是否为菜单链接或首页或工具页面
         if (!CompareURL(currentPage, item.Link)) {
